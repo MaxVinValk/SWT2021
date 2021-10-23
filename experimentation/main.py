@@ -17,7 +17,6 @@ def franken_assemble():
 
 
 if __name__ == '__main__':
-
     NUM_TRAIN_EPOCHS = 3
     DEVICE = torch.device("cuda" if torch.cuda.is_available() else "cpu")
 
