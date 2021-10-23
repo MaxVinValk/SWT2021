@@ -1,4 +1,4 @@
-from transformers import BartTokenizer,  BertModel
+from transformers import BartTokenizer, BertModel
 from custom_models import Bart2BertModel
 
 if __name__ == '__main__':
