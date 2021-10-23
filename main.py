@@ -3,18 +3,18 @@ from tqdm import tqdm
 from model import EncoderDecoder
 from data_loader import get_loader
 
-NUM_TRAIN_EPOCHS = 3
+NUM_TRAIN_EPOCHS = 1
 DEVICE = torch.device("cuda" if torch.cuda.is_available() else "cpu")
 
 if __name__ == "__main__":
     model = EncoderDecoder()
 
     data_loader = get_loader(
-        "experimentationHristo/data/train-data",
+        "data/train_preprocessed",
         "en",
         "sparql",
         model.encoder_tokenizer,
-        model.decoder_tokenizer,
+        model.decoder_tokenizer
     )
 
     model.to(DEVICE)
