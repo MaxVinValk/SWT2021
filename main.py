@@ -9,6 +9,15 @@ DEVICE = torch.device("cuda" if torch.cuda.is_available() else "cpu")
 if __name__ == "__main__":
     model = EncoderDecoder()
 
+    frozen_layers = 0
+    for name, p in model.named_parameters():
+        if name.startswith("encoder"):
+            p.requires_grad = False
+            frozen_layers += 1
+        else:
+            break
+    print(f"Froze {frozen_layers} params of the encoder.")
+
     data_loader = get_loader(
         "data/train_preprocessed",
         "en",
