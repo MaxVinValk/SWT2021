@@ -3,7 +3,7 @@ from tqdm import tqdm
 from model import EncoderDecoder
 from data_loader import get_loader
 from transformers import AdamW, get_linear_schedule_with_warmup
-from util import get_argparser, set_seed
+from util import get_argparser, set_seed, save_model
 
 if __name__ == "__main__":
     args = get_argparser().parse_args()
@@ -70,3 +70,4 @@ if __name__ == "__main__":
                 scheduler.step()
                 global_step += 1
 
+    save_model(model, f"{args.output_folder}/final")

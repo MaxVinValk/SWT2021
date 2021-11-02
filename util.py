@@ -12,11 +12,13 @@ def get_argparser():
     parser = argparse.ArgumentParser()
 
     # Data related args
-    parser.add_argument('--data_folder', type=str, default="data", help="The folder in which the data is located")
-    parser.add_argument('--data_filename', type=str, default="", help="The name of the data file, minus the extension")
+    parser.add_argument("--data_folder", type=str, default="data", help="The folder in which the data is located")
+    parser.add_argument("--data_filename", type=str, default="", help="The name of the data file, minus the extension")
+
+    parser.add_argument("--output_folder", type=str, default="out", help="The folder in which all output is stored")
 
     # General simulation settings
-    parser.add_argument('--seed', type=int, default=42, help="random seed for initialization")
+    parser.add_argument("--seed", type=int, default=42, help="random seed for initialization")
 
     # Training settings
     parser.add_argument("--train_steps", default=1, type=int, help="Number of training steps to perform")
@@ -42,3 +44,13 @@ def set_seed(seed=42):
     torch.manual_seed(seed)
     torch.cuda.manual_seed(seed)
     torch.backends.cudnn.deterministic = True
+
+
+def save_model(model, folder):
+    output_dir = folder
+
+    if not os.path.exists(output_dir):
+        os.makedirs(output_dir)
+    model_to_save = model.module if hasattr(model, 'module') else model
+    output_model_file = os.path.join(output_dir, "pytorch_model.bin")
+    torch.save(model_to_save.state_dict(), output_model_file)
