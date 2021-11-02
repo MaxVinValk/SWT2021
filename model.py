@@ -63,6 +63,10 @@ class EncoderDecoder(nn.Module):
         self.max_length = None
         self.sos_id = None
         self.eos_id = None
+        
+    def freeze_params(self):
+        for param in self.encoder.parameters():
+            param.requires_grad = False
 
     def _forward_encoder(self, input_sentence):
         tokenized_input = self.encoder_tokenizer(input_sentence, return_tensors="pt")
