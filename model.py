@@ -23,7 +23,8 @@ class LabelSmoothingLoss(nn.Module):
 
 class EncoderDecoder(nn.Module):
     def __init__(
-        self, encoder_hf="facebook/bart-base", decoder_hf="razent/spbert-mlm-wso-base"
+        self, encoder_hf="facebook/bart-base", decoder_hf="razent/spbert-mlm-wso-base",
+            device=None, beam_size=None, max_length=None
     ) -> None:
         super(EncoderDecoder, self).__init__()
 
@@ -59,10 +60,13 @@ class EncoderDecoder(nn.Module):
         # the first layer in the decoder
         # self.tie_weights()
 
-        self.beam_size = None
-        self.max_length = None
-        self.sos_id = None
-        self.eos_id = None
+        self.beam_size = beam_size
+        self.max_length = max_length
+        self.sos_id = self.decoder_tokenizer.cls_token_id  # SOS: Start of Sequence
+        self.eos_id = self.decoder_tokenizer.sep_token_id  # EOS: End of Sequence
+
+        # Stores the device we want for beam search
+        self.device = device
         
     def freeze_params(self):
         for param in self.encoder.parameters():
@@ -151,11 +155,16 @@ class EncoderDecoder(nn.Module):
         else:
             # Predict
             preds = []
-            zero = torch.cuda.LongTensor(1).fill_(0)
+
+            if self.device == "cuda":
+                zero = torch.cuda.LongTensor(1).fill_(0)
+            else:
+                zero = torch.LongTensor(1).fill_(0)
+
             for i in range(source_ids.shape[0]):
-                context = encoder_output[i : i + 1, :]
-                context_mask = source_mask[i : i + 1, :]
-                beam = Beam(self.beam_size, self.sos_id, self.eos_id)
+                context = encoder_output[i: i + 1, :]
+                context_mask = source_mask[i: i + 1, :]
+                beam = Beam(self.device, self.beam_size, self.sos_id, self.eos_id)
                 input_ids = beam.getCurrentState()
                 context = context.repeat(self.beam_size, 1, 1)
                 context_mask = context_mask.repeat(self.beam_size, 1)
@@ -164,6 +173,13 @@ class EncoderDecoder(nn.Module):
                         break
 
                     attn_mask = input_ids > 0
+
+                    # Move all to the correct model
+                    input_ids = input_ids.to(self.device)
+                    attn_mask = attn_mask.to(self.device)
+                    context = context.to(self.device)
+                    context_mask = context_mask.to(self.device)
+
                     out = self.decoder(
                         input_ids=input_ids,
                         attention_mask=attn_mask,
@@ -179,6 +195,7 @@ class EncoderDecoder(nn.Module):
                     input_ids = torch.cat((input_ids, beam.getCurrentState()), -1)
                 hyp = beam.getHyp(beam.getFinal())
                 pred = beam.buildTargetTokens(hyp)[: self.beam_size]
+
                 pred = [
                     torch.cat(
                         [x.view(-1) for x in p] + [zero] * (self.max_length - len(p))
@@ -192,9 +209,14 @@ class EncoderDecoder(nn.Module):
 
 
 class Beam(object):
-    def __init__(self, size, sos, eos):
+    def __init__(self, device, size, sos, eos):
         self.size = size
-        self.tt = torch.cuda
+
+        if device == "cuda":
+            self.tt = torch.cuda
+        else:
+            self.tt = torch
+
         # The score for each translation on the beam.
         self.scores = self.tt.FloatTensor(size).zero_()
         # The backpointers at each time-step.

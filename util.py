@@ -19,6 +19,8 @@ def get_argparser():
 
     # General simulation settings
     parser.add_argument("--seed", type=int, default=42, help="random seed for initialization")
+    parser.add_argument("--device", type=str, default="cpu", help="random seed for initialization")
+    parser.add_argument("--mode", type=str, default="train", help="Whether to run in train mode or eval mode")
 
     # Training settings
     parser.add_argument("--train_steps", default=1, type=int, help="Number of training steps to perform")

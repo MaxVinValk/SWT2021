@@ -1,17 +1,17 @@
 import torch
 from tqdm import tqdm
 from model import EncoderDecoder
-from data_loader import get_loader
+from data_loader import get_loader, encode_single_example
 from transformers import AdamW, get_linear_schedule_with_warmup
 from util import get_argparser, set_seed, save_model
 
-if __name__ == "__main__":
-    args = get_argparser().parse_args()
+
+def main_train(args):
     set_seed(args.seed)
 
-    DEVICE = torch.device("cuda" if torch.cuda.is_available() else "cpu")
+    # TODO: Synchronize max_length (this corresponds to max_target_length) with data_loader via command line args
+    model = EncoderDecoder(device=args.device, beam_size=10, max_length=64)
 
-    model = EncoderDecoder()
     model.freeze_params()
 
     data_loader = get_loader(
@@ -22,7 +22,7 @@ if __name__ == "__main__":
         model.decoder_tokenizer
     )
 
-    model.to(DEVICE)
+    model.to(args.device)
     model.train()
 
     # The parameters we do not wish to optimize
@@ -44,7 +44,7 @@ if __name__ == "__main__":
         bar = tqdm(data_loader, total=len(data_loader))
 
         for batch in bar:
-            batch = tuple(t.to(DEVICE) for t in batch)
+            batch = tuple(t.to(args.device) for t in batch)
             source_ids, source_mask, target_ids, target_mask = batch
             loss, _, _ = model(
                 source_ids=source_ids,
@@ -71,3 +71,56 @@ if __name__ == "__main__":
                 global_step += 1
 
     save_model(model, f"{args.output_folder}/final")
+
+
+def main_exp(device):
+    MAX_SEQ_LENGTH_IN = MAX_SEQ_LENGTH_OUT = 64
+
+    # We initialize the model to generate 10 answers per input
+    model = EncoderDecoder(device=device, beam_size=10, max_length=MAX_SEQ_LENGTH_OUT)
+    model.load_state_dict(torch.load("./models/100_pytorch_model.bin"))
+
+    model.eval()
+    model.to(device)
+
+    source_sentence = "How many movies did Stanley Kubrick direct?"
+    target_sentence = "SELECT DISTINCT COUNT(?uri) WHERE {?uri <http://dbpedia.org/ontology/director> " \
+                      "<http://dbpedia.org/resource/Stanley_Kubrick>  . } "
+
+    source_ids, source_mask, _, _ = encode_single_example(source_sentence, target_sentence,
+                                                          model.encoder_tokenizer, model.decoder_tokenizer,
+                                                          MAX_SEQ_LENGTH_IN, MAX_SEQ_LENGTH_OUT)
+
+    source_ids.to(device)
+    source_mask.to(device)
+
+    with torch.no_grad():
+        res = model(source_ids, source_mask)
+
+    given_results = []
+
+    for i in range(len(res[0])):
+        output = list(res[0][i].numpy())
+
+        if 0 in output:
+            output = output[:output.index(0)]
+
+        sentence = model.decoder_tokenizer.decode(output, clean_up_tokenization_spaces=False)
+        given_results.append(sentence)
+
+    print(f"\n\nSource sentence: {source_sentence}")
+    print(f"Actual target: {target_sentence}")
+
+    print("----------\n")
+
+    for i in range(len(given_results)):
+        print(f"{i + 1}: {given_results[i]}")
+
+
+if __name__ == "__main__":
+    args = get_argparser().parse_args()
+
+    if args.mode == "train":
+        main_train(args)
+    else:
+        main_exp(args.device)

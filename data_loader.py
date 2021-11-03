@@ -34,17 +34,17 @@ class InputFeatures(object):
         self.target_mask = target_mask
 
 
-def read_examples(query_file, question_file):
+def read_examples(source_file, target_file):
     """Read examples from filename."""
     examples = []
-    with open(query_file, encoding="utf-8") as query_f:
-        with open(question_file, encoding="utf-8") as question_f:
-            for idx, (query, question) in enumerate(zip(query_f, question_f)):
+    with open(source_file, encoding="utf-8") as source_f:
+        with open(target_file, encoding="utf-8") as target_f:
+            for idx, (source, target) in enumerate(zip(source_f, target_f)):
                 examples.append(
                     Example(
                         idx=idx,
-                        source=question.strip(),
-                        target=query.strip(),
+                        source=source.strip(),
+                        target=target.strip(),
                     )
                 )
     return examples
@@ -154,3 +154,18 @@ def get_loader(
     )
 
     return train_dataloader
+
+
+def encode_single_example(source, target, tokenizer_source, tokenizer_target, max_source_length, max_target_length):
+    ex = [Example(
+        idx=0,
+        source=source.strip(),
+        target=target.strip(),
+    )]
+
+    f = convert_examples_to_features(ex, tokenizer_source, tokenizer_target,
+        max_source_length, max_target_length, stage="train")
+
+    encoded = [f[0].source_ids, f[0].source_mask, f[0].target_ids, f[0].target_mask]
+
+    return tuple(torch.LongTensor([e]) for e in encoded)
