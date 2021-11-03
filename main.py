@@ -3,7 +3,7 @@ from tqdm import tqdm
 from model import EncoderDecoder
 from data_loader import get_loader, encode_single_example
 from transformers import AdamW, get_linear_schedule_with_warmup
-from util import get_argparser, set_seed, save_model
+from util import get_argparser, set_seed, save_model, revert_query
 
 
 def main_train(args):
@@ -19,27 +19,49 @@ def main_train(args):
         "en",
         "sparql",
         model.encoder_tokenizer,
-        model.decoder_tokenizer
+        model.decoder_tokenizer,
     )
 
     model.to(args.device)
     model.train()
 
     # The parameters we do not wish to optimize
-    no_decay = ['bias', 'LayerNorm.weight']
+    no_decay = ["bias", "LayerNorm.weight"]
 
     optimizer_grouped_parameters = [
-        {'params': [p for n, p in model.named_parameters() if not any(nd in n for nd in no_decay)],
-         'weight_decay': args.weight_decay},
-        {'params': [p for n, p in model.named_parameters() if any(nd in n for nd in no_decay)], 'weight_decay': 0.0}
+        {
+            "params": [
+                p
+                for n, p in model.named_parameters()
+                if not any(nd in n for nd in no_decay)
+            ],
+            "weight_decay": args.weight_decay,
+        },
+        {
+            "params": [
+                p
+                for n, p in model.named_parameters()
+                if any(nd in n for nd in no_decay)
+            ],
+            "weight_decay": 0.0,
+        },
     ]
     t_total = len(data_loader) // args.gradient_accumulation_steps * args.train_steps
-    optimizer = AdamW(optimizer_grouped_parameters, lr=args.learning_rate, eps=args.adam_epsilon)
-    scheduler = get_linear_schedule_with_warmup(optimizer,
-                                                num_warmup_steps=int(t_total * 0.1),
-                                                num_training_steps=t_total)
+    optimizer = AdamW(
+        optimizer_grouped_parameters, lr=args.learning_rate, eps=args.adam_epsilon
+    )
+    scheduler = get_linear_schedule_with_warmup(
+        optimizer, num_warmup_steps=int(t_total * 0.1), num_training_steps=t_total
+    )
 
-    nb_tr_examples, nb_tr_steps, tr_loss, global_step, best_bleu, best_loss = 0, 0, 0, 0, 0, 1e6
+    nb_tr_examples, nb_tr_steps, tr_loss, global_step, best_bleu, best_loss = (
+        0,
+        0,
+        0,
+        0,
+        0,
+        1e6,
+    )
     for epoch in range(args.train_steps):
         bar = tqdm(data_loader, total=len(data_loader))
 
@@ -84,12 +106,19 @@ def main_exp(device):
     model.to(device)
 
     source_sentence = "How many movies did Stanley Kubrick direct?"
-    target_sentence = "SELECT DISTINCT COUNT(?uri) WHERE {?uri <http://dbpedia.org/ontology/director> " \
-                      "<http://dbpedia.org/resource/Stanley_Kubrick>  . } "
+    target_sentence = (
+        "SELECT DISTINCT COUNT(?uri) WHERE {?uri <http://dbpedia.org/ontology/director> "
+        "<http://dbpedia.org/resource/Stanley_Kubrick>  . } "
+    )
 
-    source_ids, source_mask, _, _ = encode_single_example(source_sentence, target_sentence,
-                                                          model.encoder_tokenizer, model.decoder_tokenizer,
-                                                          MAX_SEQ_LENGTH_IN, MAX_SEQ_LENGTH_OUT)
+    source_ids, source_mask, _, _ = encode_single_example(
+        source_sentence,
+        target_sentence,
+        model.encoder_tokenizer,
+        model.decoder_tokenizer,
+        MAX_SEQ_LENGTH_IN,
+        MAX_SEQ_LENGTH_OUT,
+    )
 
     source_ids.to(device)
     source_mask.to(device)
@@ -103,9 +132,11 @@ def main_exp(device):
         output = list(res[0][i].numpy())
 
         if 0 in output:
-            output = output[:output.index(0)]
+            output = output[: output.index(0)]
 
-        sentence = model.decoder_tokenizer.decode(output, clean_up_tokenization_spaces=False)
+        sentence = model.decoder_tokenizer.decode(
+            output, clean_up_tokenization_spaces=False
+        )
         given_results.append(sentence)
 
     print(f"\n\nSource sentence: {source_sentence}")
@@ -115,6 +146,10 @@ def main_exp(device):
 
     for i in range(len(given_results)):
         print(f"{i + 1}: {given_results[i]}")
+
+        # Print reverted queries
+        print("--------------")
+        print(revert_query(given_results[i]))
 
 
 if __name__ == "__main__":
