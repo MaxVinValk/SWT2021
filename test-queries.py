@@ -1,6 +1,5 @@
 from numpy import average
 from SPARQLWrapper import SPARQLWrapper
-from sklearn.metrics import f1_score
 import argparse
 import pickle
 import time
@@ -27,9 +26,9 @@ class QueryTester(object):
             try:
                 ret = self.sparql.query().convert()
                 answer_list = ret["results"]["bindings"]
-                answer_uris = []
+                answer_uris = set()
                 for answer in answer_list:
-                    answer_uris.append(answer["uri"]["value"])
+                    answer_uris.add(answer["uri"]["value"])
                 output_file.write(str(answer_uris) + '\n')
                 pickle_list.append(answer_uris)
                 # ret is a stream with the results in XML, see <http://www.w3.org/TR/rdf-sparql-XMLres/>
@@ -51,10 +50,14 @@ class QueryTester(object):
         for i in range(len(query_outputs)):
             y_pred = query_outputs[i]
             y_true = golden_standard[i]
-            if y_pred == y_true:
-                correct += 1
-            print(average(f1_score(y_true, y_pred, average=None)))
-        accuracy = correct / len(query_outputs)
+            intersect = y_pred.intersection(y_true)
+            precision = len(intersect) / len(y_pred)
+            recall = len(intersect) / len(y_true)
+            try:
+                f1_score = 2 * (precision * recall) / (precision + recall)
+            except ZeroDivisionError:
+                f1_score = 0
+            print(f1_score)
 
 
 def main():
