@@ -11,9 +11,9 @@ def seperate(data_dir, subset, output_dir):
     sparql_file = open(f"{output_dir}/{subset}.sparql", "w+", encoding="utf-8")
     data = json.load(open(f"{data_dir}/{subset}.json", "r", encoding="utf-8"))
     for element in data:
-        if element["question"]:
-            en_file.write(element["question"] + "\n")
-            sparql_file.write(element["sparql_wikidata"] + "\n")
+        if element["corrected_question"]:
+            en_file.write(element["corrected_question"] + "\n")
+            sparql_file.write(element["sparql_query"].lstrip() + "\n")
 
     en_file.close()
     sparql_file.close()
