@@ -4,6 +4,7 @@ from model import EncoderDecoder
 from data_loader import get_loader, encode_single_example
 from transformers import AdamW, get_linear_schedule_with_warmup
 from util import get_argparser, set_seed, save_model, revert_query
+from main_es_eval import main_es_eval
 
 
 def main_train(args):
@@ -139,5 +140,8 @@ if __name__ == "__main__":
 
     if args.mode == "train":
         main_train(args)
+
+        # Uncomment for ES and BLEU eval suppoting main
+        # main_es_eval(args)
     else:
         main_exp(args)

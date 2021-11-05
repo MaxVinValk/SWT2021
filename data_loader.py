@@ -1,5 +1,5 @@
 import torch
-from torch.utils.data import DataLoader, RandomSampler, TensorDataset
+from torch.utils.data import DataLoader, RandomSampler, TensorDataset, SequentialSampler
 
 
 class Example(object):
@@ -89,11 +89,6 @@ def convert_examples_to_features(
         target_ids += [tokenizer_target.pad_token_id] * padding_length
         target_mask += [0] * padding_length
 
-        if example_index < 5:
-            if stage == "train":
-                # TODO: RE-add logger
-                pass
-
         features.append(
             InputFeatures(
                 example_index,
@@ -116,6 +111,7 @@ def get_loader(
     max_target_length=64,
     batch_size=8,
     grad_accum_steps=1,
+    stage="train",
 ):
     # TODO: Get all these arguments nice and neat in an arg parser again
 
@@ -128,7 +124,7 @@ def get_loader(
         tokenizer_target,
         max_source_length,
         max_target_length,
-        stage="train",
+        stage=stage,
     )
 
     all_source_ids = torch.tensor(
@@ -147,7 +143,10 @@ def get_loader(
         all_source_ids, all_source_mask, all_target_ids, all_target_mask
     )
 
-    train_sampler = RandomSampler(train_data)
+    if stage == "train":
+        train_sampler = RandomSampler(train_data)
+    else:
+        train_sampler = SequentialSampler(train_data)
 
     train_dataloader = DataLoader(
         train_data, sampler=train_sampler, batch_size=batch_size // grad_accum_steps

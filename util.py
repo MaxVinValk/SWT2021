@@ -41,6 +41,64 @@ def get_argparser():
     parser.add_argument("--weight_decay", default=0.0, type=float, help="Weight decay if we apply some.")
     parser.add_argument("--adam_epsilon", default=1e-8, type=float, help="Epsilon for Adam optimizer.")
 
+    parser.add_argument(
+        "--dev_filename",
+        default=None,
+        type=str,
+        help="The dev filename. Should contain the .jsonl files for this task.",
+    )
+
+    parser.add_argument(
+        "--eval_batch_size",
+        default=8,
+        type=int,
+        help="Batch size per GPU/CPU for evaluation.",
+    )
+
+    parser.add_argument(
+        "--test_filename",
+        default=None,
+        type=str,
+        help="The test filename. Should contain the .jsonl files for this task.",
+    )
+    parser.add_argument(
+        "--source",
+        default="en",
+        type=str,
+        help="The source language (for file extension)",
+    )
+    parser.add_argument(
+        "--target",
+        default="sparql",
+        type=str,
+        help="The target language (for file extension)",
+    )
+
+    parser.add_argument(
+        "--do_eval", action="store_true", help="Whether to run eval on the dev set."
+    )
+    parser.add_argument(
+        "--do_test", action="store_true", help="Whether to run eval on the dev set."
+    )
+
+    parser.add_argument(
+        "--delta_es",
+        type=float,
+        default=0.005,
+        help="The delta parameter for ES",
+    )
+
+    parser.add_argument(
+        "--do_early_stopping", action="store_true", help="Whether to do ES on dev set."
+    )
+
+    parser.add_argument(
+        "--patience",
+        type=int,
+        default=5,
+        help="Number of epochs for patience in ES",
+    )
+
     return parser
 
 
