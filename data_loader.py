@@ -168,3 +168,21 @@ def encode_single_example(source, target, tokenizer_source, tokenizer_target, ma
     encoded = [f[0].source_ids, f[0].source_mask, f[0].target_ids, f[0].target_mask]
 
     return tuple(torch.LongTensor([e]) for e in encoded)
+
+
+def find_max_feature_lengths(train_filename, source, target, tokenizer_source, tokenizer_target):
+    train_examples = read_examples(
+        train_filename + "." + source, train_filename + "." + target
+    )
+
+    max_source = 0
+    max_target = 0
+
+    for example in train_examples:
+        len_source = len(tokenizer_source.tokenize(example.source))
+        len_target = len(tokenizer_target.tokenize(example.target))
+
+        max_source = max(max_source, len_source)
+        max_target = max(max_target, len_target)
+
+    return max_source, max_target
