@@ -29,7 +29,7 @@ def main_es_eval(args):
     )
 
     eval_data_loader = get_loader(
-        f"{args.data_folder}/dev",
+        f"{args.data_folder}/{args.dev_filename}",
         "en",
         "sparql",
         model.encoder_tokenizer,
@@ -136,7 +136,10 @@ def main_es_eval(args):
                 eval_examples, eval_data = dev_dataset['dev_bleu']
             else:
                 eval_examples = read_examples(
-                    args.dev_filename + "." + args.source, args.dev_filename + "." + args.target)
+                    f"{args.data_folder}/{args.dev_filename}.{args.source}",
+                    f"{args.data_folder}/{args.dev_filename}.{args.target}",
+                )
+
                 eval_examples = random.sample(
                     eval_examples, min(1000, len(eval_examples)))
                 eval_features = convert_examples_to_features(
