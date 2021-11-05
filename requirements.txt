@@ -2,12 +2,13 @@ backports.entry-points-selectable==1.1.0
 certifi==2021.10.8
 charset-normalizer==2.0.6
 click==8.0.3
-#conda==4.3.16
 distlib==0.3.3
 filelock==3.3.0
 huggingface-hub==0.0.19
 idna==3.2
+importlib-metadata==4.8.1
 joblib==1.1.0
+nltk==3.6.5
 numpy==1.21.2
 packaging==21.0
 pipenv==2021.5.29
@@ -30,3 +31,5 @@ typing-extensions==3.10.0.2
 urllib3==1.26.7
 virtualenv==20.8.1
 virtualenv-clone==0.5.7
+zipp==3.6.0
+
