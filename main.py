@@ -9,8 +9,7 @@ from util import get_argparser, set_seed, save_model, revert_query
 def main_train(args):
     set_seed(args.seed)
 
-    # TODO: Synchronize max_length (this corresponds to max_target_length) with data_loader via command line args
-    model = EncoderDecoder(device=args.device, beam_size=10, max_length=64)
+    model = EncoderDecoder(device=args.device, beam_size=args.beam, max_length=args.max_target_length)
 
     model.freeze_params()
     model.to(args.device)
@@ -74,15 +73,13 @@ def main_train(args):
     save_model(model, f"{args.output_folder}/final")
 
 
-def main_exp(device):
-    MAX_SEQ_LENGTH_IN = MAX_SEQ_LENGTH_OUT = 64
-
+def main_exp(args):
     # We initialize the model to generate 10 answers per input
-    model = EncoderDecoder(device=device, beam_size=10, max_length=MAX_SEQ_LENGTH_OUT)
-    model.load_state_dict(torch.load("./models/100_pytorch_model.bin"))
+    model = EncoderDecoder(device=args.device, beam_size=args.beam, max_length=args.max_target_length)
+    model.load_state_dict(torch.load(args.model_params))
 
     model.eval()
-    model.to(device)
+    model.to(args.device)
 
     source_sentence = "How many movies did Stanley Kubrick direct?"
     target_sentence = "SELECT DISTINCT COUNT(?uri) WHERE {?uri <http://dbpedia.org/ontology/director> " \
@@ -93,12 +90,12 @@ def main_exp(device):
         target_sentence,
         model.encoder_tokenizer,
         model.decoder_tokenizer,
-        MAX_SEQ_LENGTH_IN,
-        MAX_SEQ_LENGTH_OUT,
+        args.max_source_length,
+        args.max_target_length,
     )
 
-    source_ids.to(device)
-    source_mask.to(device)
+    source_ids.to(args.device)
+    source_mask.to(args.device)
 
     with torch.no_grad():
         res = model(source_ids, source_mask)
@@ -126,10 +123,21 @@ def main_exp(device):
         print(revert_query(given_results[i]))
 
 
+def main_pred(args):
+    model = EncoderDecoder(device=args.device, beam_size=args.beam, max_length=args.max_target_length)
+    model.load_state_dict(torch.load(args.model_params))
+
+    model.eval()
+    model.to(args.device)
+
+
+
+
+
 if __name__ == "__main__":
     args = get_argparser().parse_args()
 
     if args.mode == "train":
         main_train(args)
     else:
-        main_exp(args.device)
+        main_exp(args)

@@ -18,10 +18,16 @@ def get_argparser():
 
     parser.add_argument("--output_folder", type=str, default="out", help="The folder in which all output is stored")
 
+    parser.add_argument("--max_source_length", type=int, default=64, help="The maximum length in tokens of the source")
+    parser.add_argument("--max_target_length", type=int, default=64, help="The maximum length in tokens of the target")
+
+    parser.add_argument("--model_params", type=str, default="", help="The location of the model parameters (bin file)")
+
     # General simulation settings
     parser.add_argument("--seed", type=int, default=42, help="random seed for initialization")
     parser.add_argument("--device", type=str, default="cpu", help="random seed for initialization")
     parser.add_argument("--mode", type=str, default="train", help="Whether to run in train mode or eval mode")
+    parser.add_argument("--beam", type=int, default=10, help="The size of the beam search")
 
     # Training settings
     parser.add_argument("--train_steps", default=1, type=int, help="Number of training steps to perform")
