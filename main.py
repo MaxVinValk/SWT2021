@@ -4,6 +4,7 @@ from model import EncoderDecoder
 from data_loader import get_loader, encode_single_example
 from transformers import AdamW, get_linear_schedule_with_warmup
 from util import get_argparser, set_seed, save_model, revert_query
+from main_es_eval import main_es_eval
 
 
 def main_train(args):
@@ -46,7 +47,8 @@ def main_train(args):
             "weight_decay": 0.0,
         },
     ]
-    t_total = len(data_loader) // args.gradient_accumulation_steps * args.train_steps
+    t_total = len(
+        data_loader) // args.gradient_accumulation_steps * args.train_steps
     optimizer = AdamW(
         optimizer_grouped_parameters, lr=args.learning_rate, eps=args.adam_epsilon
     )
@@ -99,7 +101,8 @@ def main_exp(device):
     MAX_SEQ_LENGTH_IN = MAX_SEQ_LENGTH_OUT = 64
 
     # We initialize the model to generate 10 answers per input
-    model = EncoderDecoder(device=device, beam_size=10, max_length=MAX_SEQ_LENGTH_OUT)
+    model = EncoderDecoder(device=device, beam_size=10,
+                           max_length=MAX_SEQ_LENGTH_OUT)
     model.load_state_dict(torch.load("./models/100_pytorch_model.bin"))
 
     model.eval()
@@ -157,5 +160,8 @@ if __name__ == "__main__":
 
     if args.mode == "train":
         main_train(args)
+
+        # Uncomment for ES and BLEU eval suppoting main
+        # main_es_eval(args)
     else:
         main_exp(args.device)
