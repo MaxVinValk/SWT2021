@@ -7,18 +7,16 @@ from torch.utils.data.sampler import SequentialSampler
 from tqdm import tqdm
 from early_stopping import EarlyStopping
 from model import EncoderDecoder
-from data_loader import convert_examples_to_features, get_loader, encode_single_example, read_examples
+from data_loader import convert_examples_to_features, get_loader, read_examples
 from transformers import AdamW, get_linear_schedule_with_warmup
-from util import get_argparser, set_seed, save_model, revert_query
+from util import save_model
 from nltk.translate.bleu_score import corpus_bleu
 import re
 
 
 def main_es_eval(args):
-    set_seed(args.seed)
 
-    # TODO: Synchronize max_length (this corresponds to max_target_length) with data_loader via command line args
-    model = EncoderDecoder(device=args.device, beam_size=10, max_length=64)
+    model = EncoderDecoder(device=args.device, beam_size=args.beam, max_length=args.max_target_length)
 
     model.freeze_params()
 
@@ -45,22 +43,9 @@ def main_es_eval(args):
     no_decay = ["bias", "LayerNorm.weight"]
 
     optimizer_grouped_parameters = [
-        {
-            "params": [
-                p
-                for n, p in model.named_parameters()
-                if not any(nd in n for nd in no_decay)
-            ],
-            "weight_decay": args.weight_decay,
-        },
-        {
-            "params": [
-                p
-                for n, p in model.named_parameters()
-                if any(nd in n for nd in no_decay)
-            ],
-            "weight_decay": 0.0,
-        },
+        {"params": [p for n, p in model.named_parameters() if not any(nd in n for nd in no_decay)],
+         "weight_decay": args.weight_decay},
+        {"params": [p for n, p in model.named_parameters() if any(nd in n for nd in no_decay)], "weight_decay": 0.0}
     ]
 
     # initialize the early_stopping object
@@ -85,9 +70,6 @@ def main_es_eval(args):
         0,
         1e6,
     )
-
-    #model.load_state_dict(torch.load(
-    #    "output/final_model/100_epochs_en_to_sparql.bin"))
 
     for epoch in range(args.train_steps):
         bar = tqdm(data_loader, total=len(data_loader))
@@ -229,5 +211,3 @@ def main_es_eval(args):
                 output_dir = os.path.join(
                     args.output_folder, "checkpoint-best-bleu")
                 save_model(model, output_dir)
-
-    #save_model(model, f"{args.output_folder}/final")

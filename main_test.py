@@ -2,6 +2,7 @@ from model import EncoderDecoder
 from data_loader import get_loader
 import torch
 from tqdm import tqdm
+from util import revert_query
 
 
 def main_test(args):
@@ -44,7 +45,7 @@ def main_test(args):
             sentence = model.decoder_tokenizer.decode(output, clean_up_tokenizeation_spaces=False)
             answers.append(sentence)
 
-        total_answers.append(answers)
+        total_answers.append(revert_query(answers))
 
     # write to file
     with open(f"{args.data_folder}/{args.data_filename}.answers", "w") as f:
