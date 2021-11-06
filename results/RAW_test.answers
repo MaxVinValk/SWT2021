@@ -1,0 +1,500 @@
+select distinct var _ uri where brack _ open < dbr _ american _ mediterranean _ sea > < dbp _ company > var _ x sep _ dot var _ x < dbo _ developer > var _ uri sep _ dot var _ x
+select distinct var _ uri where brack _ open < dbr _ jon _ speelman > < dbo _ almamater > var _ uri sep _ dot < dbr _ polytechnic _ university _ of _ the _ philippines _
+select distinct var _ uri where brack _ open < dbr _ ganz _ uv > < dbo _ developer > var _ uri sep _ dot < dbr _ microsoft _ windows > < dbo _ developer > var _ uri sep _ dot
+select distinct count attr _ open var _ uri attr _ close where brack _ open var _ x < dbo _ hometown > < dbr _ canada > sep _ dot var _ x < dbp _ genre > var _ uri brack _ close
+select distinct var _ uri where brack _ open < dbr _ google _ bridge > < dbo _ country > var _ uri brack _ close
+select distinct var _ uri where brack _ open var _ x < dbp _ foundation > < dbr _ new _ york _ city > sep _ dot var _ uri < dbp _ starring > var _ x sep _ dot var _ uri < rd
+select distinct var _ uri where brack _ open var _ x < dbo _ president > < dbr _ russell > sep _ dot var _ uri < dbo _ leader > var _ x sep _ dot var _ uri < rdf _ type > <
+select distinct var _ uri where brack _ open < dbr _ simon > < dbp _ location > var _ uri brack _ close
+select distinct var _ uri where brack _ open < dbr _ moscow _ region > < dbp _ location > var _ uri brack _ close
+ask where brack _ open < dbr _ john _ house _ attr _ open tv _ series attr _ close > < dbp _ founder > < dbr _ pixar > brack _ close
+select distinct var _ uri where brack _ open < dbr _ jack _ ryan _ attr _ open politician attr _ close > < dbo _ localauthority > var _ uri sep _ dot < dbr _ chicagow _ attr _ open
+select distinct var _ uri where brack _ open < dbr _ michael _ harris > < dbp _ knownfor > var _ uri brack _ close
+select distinct var _ uri where brack _ open < dbr _ the _ street _ attr _ open film attr _ close > < dbo _ writer > var _ uri brack _ close
+select distinct var _ uri where brack _ open < dbr _ the _ skeleton _ dance > < dbo _ animator > var _ x sep _ dot var _ x < dbo _ location > var _ uri sep _ dot var _ x < rdf _ type
+select distinct var _ uri where brack _ open var _ x < dbp _ headquarters > < dbr _ united _ states > sep _ dot var _ x < dbp _ artist > var _ uri sep _ dot var _ x < rdf _ type >
+select distinct var _ uri where brack _ open var _ x < dbo _ academicdiscipline > < dbr _ kansas > sep _ dot var _ x < dbo _ author > var _ uri sep _ dot var _ x < rdf _
+select distinct count attr _ open var _ uri attr _ close where brack _ open brack _ close
+select distinct var _ uri where brack _ open var _ uri < dbo _ knownfor > < dbr _ pixar > brack _ close
+select distinct var _ uri where brack _ open var _ uri < dbp _ affiliations > < dbr _ graham _ holdings _ company > sep _ dot var _ uri < rdf _ type > < dbo _ person > brack _ close
+select distinct var _ uri where brack _ open var _ x < dbp _ firstteam > < dbr _ st. _ moscow > sep _ dot var _ x < dbp _ firstdriver > var _ uri sep _ dot var
+select distinct var _ uri where brack _ open var _ uri < dbo _ leader > < dbr _ wisconsin > sep _ dot brack _ close
+select distinct var _ uri where brack _ open var _ x < dbp _ battles > < dbr _ steve _ moffat > sep _ dot var _ x < dbp _ residence > var _ uri sep _ dot var _ x < rd
+select distinct var _ uri where brack _ open var _ uri < dbo _ award > < dbr _ royal _ society > sep _ dot brack _ close
+select distinct var _ uri where brack _ open < dbr _ ryan _ pell > < dbo _ nationality > var _ uri brack _ close
+select distinct var _ uri where brack _ open < dbr _ the _ skeleton _ dance > < dbo _ animator > var _ x sep _ dot var _ x < dbo _ location > var _ uri sep _ dot var _ x < rdf _ type
+select distinct count attr _ open var _ uri attr _ close where brack _ open var _ x < dbp _ assembly > < dbr _ toronto > sep _ dot var _ x < dbp _ destinations > var _ uri brack _ close
+select distinct var _ uri where brack _ open var _ x < dbo _ knownfor > < dbr _ new _ york _ city > sep _ dot var _ x < dbo _ knownfor > var _ uri sep _ dot brack _ close
+ask where brack _ open < dbr _ u. s. _ university > < dbp _ managerclubs > < dbr _ new _ york > brack _ close
+select distinct var _ uri where brack _ open < dbr _ american _ mediterranean _ sea > < dbp _ cities > var _ uri brack _ close
+select distinct var _ uri where brack _ open var _ uri < dbo _ executiveproducer > < dbr _ stoke > sep _ dot var _ uri < rdf _ type > < dbo _ televisionshow > brack _ close
+select distinct var _ uri where brack _ open var _ uri < dbo _ network > < dbr _ bbc _ hd > sep _ dot var _ uri < rdf _ type > < dbo _ televisionshow > brack _ close
+ask where brack _ open < dbr _ kate _ gremlin > < dbp _ assembly > < dbr _ kaminis > brack _ close
+select distinct var _ uri where brack _ open < dbr _ william _ hogan > < dbo _ formerteam > var _ x sep _ dot var _ x < dbp _ headquarters > var _ uri sep _ dot var _ x < rdf
+ask where brack _ open < dbr _ kovacs > < dbp _ pastmembers > < dbr _ kaminister > brack _ close
+select distinct var _ uri where brack _ open var _ x < dbo _ almamater > < dbr _ russia > sep _ dot var _ uri < dbo _ restingplace > var _ x sep _ dot var _ uri < rdf _
+select distinct var _ uri where brack _ open var _ x < dbp _ distributor > < dbr _ music _ entertainment > sep _ dot var _ x < dbp _ writer > var _ uri sep _ dot var _ x < rdf _ type >
+select distinct var _ uri where brack _ open var _ uri < dbp _ currentteam > < dbr _ roger _ barton > brack _ close
+select distinct count attr _ open var _ uri attr _ close where brack _ open var _ uri < dbo _ sourcecountry > < dbr _ england > sep _ dot brack _ close
+select distinct var _ uri where brack _ open < dbr _ robert _ sarvis > < dbo _ birthplace > var _ uri brack _ close
+select distinct var _ uri where brack _ open var _ x < dbp _ writer > < dbr _ jason _ hd > sep _ dot var _ x < dbp _ religion > var _ uri sep _ dot var _ x < rdf
+select distinct var _ uri where brack _ open var _ uri < dbo _ militaryunit > < dbr _ vinifera > sep _ dot var _ uri < dbo _ militaryunit > < dbr _ victor > sep _ dot
+select distinct var _ uri where brack _ open < dbr _ john _ united _ states > < dbp _ president > var _ uri brack _ close
+select distinct var _ uri where brack _ open < dbr _ india > < dbp _ leadername > var _ x sep _ dot var _ x < dbo _ leader > var _ uri sep _ dot var _ x < rdf _ type > <
+select distinct var _ uri where brack _ open < dbr _ michael _ powell _ attr _ open politician attr _ close > < dbo _ restingplace > var _ uri sep _ dot < dbr _ russell _ t _ t _
+select distinct var _ uri where brack _ open var _ uri < dbo _ team > < dbr _ toronto > sep _ dot var _ uri < rdf _ type > < dbo _ basketballplayer > brack _ close
+select distinct var _ uri where brack _ open var _ x < dbp _ music > < dbr _ john _ kansas > sep _ dot var _ uri < dbp _ music > var _ x sep _ dot var _ uri < r
+select distinct count attr _ open var _ uri attr _ close where brack _ open var _ x < dbo _ birthplace > < dbr _ new _ york > sep _ dot var _ uri < dbo _ award > var _ x sep _ dot var _
+select distinct var _ uri where brack _ open < dbr _ michael _ johnson > < dbo _ almamater > var _ uri sep _ dot < dbr _ michael _ johnson > < dbo _ almamater > var
+select distinct var _ uri where brack _ open var _ x < dbp _ location > < dbr _ england > sep _ dot var _ x < dbp _ genre > var _ uri sep _ dot var _ x < rdf _ type >
+ask where brack _ open < dbr _ chicago _ records > < dbp _ cinematography > < dbr _ gibson _ records > brack _ close
+select distinct count attr _ open var _ uri attr _ close where brack _ open var _ uri < dbp _ distributor > < dbr _ cinema _ international _ corporation > sep _ dot var _ uri < rdf _ type > < dbo _ film
+select distinct count attr _ open var _ uri attr _ close where brack _ open var _ x < dbo _ locationcity > < dbr _ england > sep _ dot var _ uri < dbo _ manufacturer > var _ x sep _ dot var _
+select distinct var _ uri where brack _ open var _ x < dbo _ language > < dbr _ sweden > sep _ dot var _ x < dbp _ state > var _ uri sep _ dot var _ x < rdf _ type > <
+select distinct count attr _ open var _ uri attr _ close where brack _ open var _ x < dbo _ religion > < dbr _ bbc > sep _ dot var _ x < dbo _ religion > var _ uri sep _ dot var _ u
+select distinct var _ uri where brack _ open var _ uri < dbo _ location > < dbr _ ontario > sep _ dot brack _ close
+select distinct var _ uri where brack _ open var _ x < dbo _ subsequentwork > < dbr _ robert _ b > sep _ dot var _ x < dbp _ writer > var _ uri sep _ dot var _ x < rdf _ type
+select distinct var _ uri where brack _ open var _ x < dbp _ predecessor > < dbr _ william _ clinton > sep _ dot var _ uri < dbo _ child > var _ x sep _ dot brack _ close
+select distinct count attr _ open var _ uri attr _ close where brack _ open var _ uri < dbo _ executiveproducer > < dbr _ germany > sep _ dot brack _ close
+select distinct count attr _ open var _ uri attr _ close where brack _ open var _ uri < dbo _ locationcity > < dbr _ texas > sep _ dot var _ uri < rdf _ type > < dbo _ company > bra
+ask where brack _ open < dbr _ toronto _ me > < dbp _ currentteam > < dbr _ timothy _ moscow > brack _ close
+select distinct var _ uri where brack _ open < dbr _ davies > < dbo _ developer > var _ uri brack _ close
+select distinct var _ uri where brack _ open var _ x < dbp _ designer > < dbr _ maryland > sep _ dot var _ x < dbp _ owner > var _ uri sep _ dot var _ x < rdf _ type >
+select distinct var _ uri where brack _ open < dbr _ mediterranean _ sea > < dbp _ cities > var _ uri sep _ dot < dbr _ mediterranean > < dbo _ knownfor > var _ uri
+select distinct var _ uri where brack _ open var _ uri < dbp _ neighboringmunicipalities > < dbr _ liga > sep _ dot brack _ close
+ask where brack _ open < dbr _ julia _ michael > < dbp _ city > < dbr _ michigan > brack _ close
+select distinct count attr _ open var _ uri attr _ close where brack _ open var _ x < dbo _ leadername > < dbr _ germany > sep _ dot var _ uri < dbo _ related > var _ x sep _ dot var _
+select distinct var _ uri where brack _ open var _ x < dbo _ child > < dbr _ sweden > sep _ dot var _ x < dbo _ formerteam > var _ uri sep _ dot var _ x < rdf _ type >
+select distinct count attr _ open var _ uri attr _ close where brack _ open brack _ close
+select distinct var _ uri where brack _ open < dbr _ martin _ mcgregor > < dbp _ state > var _ uri sep _ dot < dbr _ north _ river > < dbo _ state > var _ uri brack
+select distinct var _ uri where brack _ open < dbr _ ford _ frank > < dbo _ parentcompany > var _ uri brack _ close
+ask where brack _ open < dbr _ mauritius > < dbo _ sourcemountain > < dbr _ michigan > brack _ close
+select distinct var _ uri where brack _ open var _ uri < dbp _ predecessor > < dbr _ david _ schumacher > brack _ close
+ask where brack _ open < dbr _ william _ will > < dbp _ primeminister > < dbr _ william _ williams > brack _ close
+select distinct var _ uri where brack _ open var _ x < dbp _ headquarters > < dbr _ royal _ society > sep _ dot var _ x < dbp _ mascot > var _ uri sep _ dot var _ x < rdf _ type >
+select distinct var _ uri where brack _ open < dbr _ bobby _ beasley > < dbo _ predecessor > var _ uri brack _ close
+select distinct count attr _ open var _ uri attr _ close where brack _ open var _ x < dbo _ birthplace > < dbr _ united _ states > sep _ dot var _ uri < dbo _ distributor > var _ x sep _ dot var _ u
+select distinct var _ uri where brack _ open var _ uri < dbo _ deathcause > < dbr _ russia > brack _ close
+select distinct var _ uri where brack _ open < dbr _ henri, _ new _ york > < dbo _ deathplace > var _ x sep _ dot var _ x < dbo _ deathplace > var _ uri sep _ dot brack _ close
+select distinct var _ uri where brack _ open var _ x < dbo _ subsequentwork > < dbr _ frasier > sep _ dot var _ x < dbo _ subsequentwork > var _ uri sep _ dot var _ x < rdf _ type >
+select distinct count attr _ open var _ uri attr _ close where brack _ open brack _ close
+select distinct count attr _ open var _ uri attr _ close where brack _ open var _ uri < dbo _ locatedinarea > < dbr _ california > sep _ dot brack _ close
+select distinct var _ uri where brack _ open var _ uri < dbo _ relative > < dbr _ hbo > sep _ dot var _ uri < rdf _ type > < dbo _ country > brack _ close
+select distinct var _ uri where brack _ open var _ x < dbp _ services > < dbr _ onedrive > sep _ dot var _ x < dbp _ services > var _ uri sep _ dot var _ x < rdf _ type >
+ask where brack _ open < dbr _ the _ toronto > < dbp _ pastmembers > < dbr _ boston > brack _ close
+select distinct var _ uri where brack _ open var _ x < dbo _ deathplace > < dbr _ kubrick > sep _ dot var _ uri < dbp _ director > var _ x sep _ dot var _ uri < rdf _ type
+select distinct var _ uri where brack _ open var _ x < dbp _ assembly > < dbr _ toronto > sep _ dot var _ x < dbp _ party > var _ uri sep _ dot var _ x < rdf _ type >
+select distinct var _ uri where brack _ open var _ uri < dbo _ sourcemountain > < dbr _ north _ sea > brack _ close
+select distinct var _ uri where brack _ open var _ uri < dbp _ pastmembers > < dbr _ arlington _ music > brack _ close
+select distinct var _ uri where brack _ open < dbr _ kumta > < dbp _ primeminister > var _ uri sep _ dot < dbr _ vadodara _ railway _ station > < dbp _ recorded > var _ uri
+select distinct count attr _ open var _ uri attr _ close where brack _ open var _ x < dbo _ associatedmusicalartist > < dbr _ jordan _ cronen > sep _ dot var _ x < dbo _ bandmember > var
+select distinct var _ uri where brack _ open var _ uri < dbo _ academicadvisor > < dbr _ san _ francisco > sep _ dot brack _ close
+select distinct count attr _ open var _ uri attr _ close where brack _ open brack _ close
+select distinct var _ uri where brack _ open var _ x < dbo _ associatedband > < dbr _ national _ athletic _ association > sep _ dot var _ uri < dbp _ doctoralstudents > var _ x sep _ dot var _ uri <
+select distinct var _ uri where brack _ open < dbr _ kumta > < dbp _ inflow > var _ uri brack _ close
+select distinct var _ uri where brack _ open var _ uri < dbo _ operatingsystem > < dbr _ mac _ os > brack _ close
+select distinct var _ uri where brack _ open < dbr _ polytechnic _ university _ of _ the _ philippines > < dbo _ nationality > var _ uri brack _ close
+select distinct var _ uri where brack _ open < dbr _ the _ skeleton _ dance > < dbo _ animator > var _ uri sep _ dot < dbr _ tom _ tv > < dbo _ manufacturer > var _ uri brack _ close
+select distinct var _ uri where brack _ open < dbr _ american _ mediterranean _ sea > < dbp _ cities > var _ uri sep _ dot < dbr _ toronto > < dbo _ restingplace > var _ u
+select distinct var _ uri where brack _ open < dbr _ thomas _ vadodara _ railway _ station > < dbo _ routeend > var _ uri sep _ dot < dbr _ vadodara _ railway _ station > < dbo _
+select distinct var _ uri where brack _ open var _ uri < dbp _ parent > < dbr _ francisco _ khan > brack _ close
+ask where brack _ open < dbr _ chicago _ corporation > < dbp _ company > < dbr _ chicago > brack _ close
+select distinct count attr _ open var _ uri attr _ close where brack _ open var _ x < dbp _ knownfor > < dbr _ university _ of _ the _ joseph > sep _ dot var _ x < dbo _ knownfor >
+select distinct var _ uri where brack _ open < dbr _ the _ skeleton _ dance > < dbo _ animator > var _ uri brack _ close
+ask where brack _ open < dbr _ daund _ railway _ station > < dbo _ routeend > < dbr _ david _ david > brack _ close
+select distinct var _ uri where brack _ open < dbr _ kumta > < dbp _ leadername > var _ uri sep _ dot < dbr _ karl _ kelly > < dbo _ religion > var _ uri brack _ close
+select distinct var _ uri where brack _ open var _ x < dbo _ restingplace > < dbr _ davies > sep _ dot var _ uri < dbp _ artist > var _ x sep _ dot brack _ close
+select distinct var _ uri where brack _ open < dbr _ russell _ t _ davies > < dbp _ notableworks > var _ uri brack _ close
+select distinct var _ uri where brack _ open < dbr _ mediterranean _ sea > < dbp _ locationcity > var _ uri sep _ dot < dbr _ trinity _ college > < dbo _ deathplace > var _ uri
+select distinct count attr _ open var _ uri attr _ close where brack _ open var _ x < dbo _ locationcity > < dbr _ united _ states > sep _ dot var _ uri < dbp _ programminglanguage > var _ x sep
+select distinct var _ uri where brack _ open var _ uri < dbo _ operatingsystem > < dbr _ microsoft _ windows > sep _ dot var _ uri < dbo _ programminglanguage > < dbr _ c + + > se
+select distinct var _ uri where brack _ open var _ x < dbp _ owner > < dbr _ toronto > sep _ dot var _ x < dbp _ owner > var _ uri sep _ dot var _ x < rdf _ type >
+select distinct var _ uri where brack _ open var _ uri < dbo _ relative > < dbr _ kelly _ osbourne > sep _ dot brack _ close
+select distinct var _ uri where brack _ open var _ uri < dbp _ thememusiccomposer > < dbr _ ron _ grainer > sep _ dot var _ uri < rdf _ type > < dbo _ televisionshow > bra
+select distinct var _ uri where brack _ open var _ x < dbp _ thememusiccomposer > < dbr _ jane _ adventures > sep _ dot var _ uri < dbp _ thememusiccomposer > var _ x sep _
+select distinct var _ uri where brack _ open var _ x < dbo _ owningcompany > < dbr _ charles > sep _ dot var _ x < dbp _ writer > var _ uri sep _ dot var _ x < rdf _
+select distinct var _ uri where brack _ open var _ x < dbp _ affiliations > < dbr _ vitish _ vadodara > sep _ dot var _ uri < dbo _ child > var _ x sep _ dot brack _ close
+select distinct var _ uri where brack _ open var _ uri < dbo _ child > < dbr _ lori _ black > sep _ dot var _ uri < dbp _ restingplace > < dbr _ london > sep _ dot var _ u
+select distinct var _ uri where brack _ open < dbr _ mediterranean _ sea > < dbp _ cities > var _ uri brack _ close
+select distinct var _ uri where brack _ open < dbr _ john _ mcgregor > < dbo _ knownfor > var _ uri sep _ dot < dbr _ william _ georgia _ attr _ open artist attr _
+select distinct var _ uri where brack _ open var _ x < dbp _ thememusiccomposer > < dbr _ liga > sep _ dot var _ uri < dbp _ thememusiccomposer > var _ x sep _ dot var
+select distinct var _ uri where brack _ open var _ uri < dbp _ thememusiccomposer > < dbr _ johnson _ attr _ open film attr _ close > sep _ dot var _ uri < dbp _ music > <
+select distinct var _ uri where brack _ open var _ x < dbp _ producer > < dbr _ new _ york _ city > sep _ dot var _ uri < dbo _ network > var _ x sep _ dot var _ uri < rdf
+select distinct var _ uri where brack _ open < dbr _ arlington _ bridge > < dbo _ county > var _ uri brack _ close
+select distinct var _ uri where brack _ open < dbr _ david _ hogan > < dbo _ occupation > var _ uri sep _ dot < dbr _ kubrick > < dbp _ owner > var _ uri sep _ dot brack
+select distinct var _ uri where brack _ open < dbr _ british _ railway _ station > < dbo _ countyseat > var _ uri brack _ close
+select distinct var _ uri where brack _ open < dbr _ ford _ frank > < dbo _ parent > var _ uri brack _ close
+select distinct var _ uri where brack _ open var _ uri < dbp _ thememusiccomposer > < dbr _ primus _ attr _ open band attr _ close > sep _ dot var _ uri < rdf _ type > <
+select distinct var _ uri where brack _ open < dbr _ george _ madison > < dbo _ deathplace > var _ uri sep _ dot < dbr _ francisco _ moscow > < dbo _ deathplace > var _
+select distinct var _ uri where brack _ open var _ uri < dbp _ doctoraladvisor > < dbr _ erik _ franco > brack _ close
+select distinct var _ uri where brack _ open var _ x < dbo _ locatedinarea > < dbr _ india > sep _ dot var _ uri < dbo _ location > var _ x sep _ dot brack _ close
+select distinct var _ uri where brack _ open < dbr _ polytechnic _ university _ of _ the _ philippi > < dbp _ founder > var _ x sep _ dot var _ x < dbo _ owner > var _ uri sep _
+select distinct var _ uri where brack _ open var _ uri < dbo _ relative > < dbr _ arlington _ county, _ new _ york > sep _ dot brack _ close
+select distinct var _ uri where brack _ open < dbr _ jack _ ryan _ attr _ open politician attr _ close > < dbo _ debutteam > var _ uri sep _ dot < dbr _ swedish _ language > < dbp
+select distinct var _ uri where brack _ open var _ x < dbp _ distributor > < dbr _ clinton > sep _ dot var _ x < dbp _ producer > var _ uri sep _ dot var _ x < rdf _ type >
+select distinct var _ uri where brack _ open < dbr _ vadodara _ railway _ station > < dbp _ type > var _ uri sep _ dot < dbr _ vadodara _ railway _ station > < dbo _ routeend > var
+ask where brack _ open < dbr _ robert _ c. > < dbp _ pastmembers > < dbr _ roger > brack _ close
+select distinct var _ uri where brack _ open < dbr _ robert _ tv > < dbo _ spouse > var _ uri sep _ dot < dbr _ robert _ dan _ moscow > < dbo _ birthplace > var _ uri
+select distinct var _ uri where brack _ open < dbr _ jim _ joseph _ andrews > < dbo _ knownfor > var _ uri sep _ dot < dbr _ jordan _ team > < dbo _ knownfor >
+select distinct var _ uri where brack _ open var _ x < dbo _ deathplace > < dbr _ wisconsin > sep _ dot var _ x < dbo _ author > var _ uri sep _ dot var _ x < rdf _ type >
+select distinct var _ uri where brack _ open var _ x < dbo _ source > < dbr _ american _ sea > sep _ dot var _ x < dbp _ cities > var _ uri sep _ dot var _ x < rdf _ type
+select distinct var _ uri where brack _ open var _ uri < dbo _ musiccomposer > < dbr _ germany > sep _ dot var _ uri < rdf _ type > < dbo _ film > brack _ close
+select distinct var _ uri where brack _ open < dbr _ russell _ t _ davies > < dbo _ leader > var _ x sep _ dot var _ x < dbp _ state > var _ uri sep _ dot brack _ close
+select distinct count attr _ open var _ uri attr _ close where brack _ open var _ x < dbo _ locationcity > < dbr _ united _ states > sep _ dot var _ x < dbp _ owner > var _ uri sep _ dot bra
+select distinct var _ uri where brack _ open var _ x < dbp _ foundation > < dbr _ new _ york _ city > sep _ dot var _ uri < dbo _ restingplace > var _ x sep _ dot brack _ close
+select distinct var _ uri where brack _ open < dbr _ mediterranean _ sea > < dbp _ location > var _ uri brack _ close
+select distinct var _ uri where brack _ open var _ x < dbo _ deathplace > < dbr _ russia > sep _ dot var _ uri < dbo _ restingplace > var _ x sep _ dot var _ uri < rdf _ type
+select distinct count attr _ open var _ uri attr _ close where brack _ open brack _ close
+select distinct var _ uri where brack _ open var _ uri < dbo _ operatingsystem > < dbr _ microsoft _ windows > sep _ dot var _ uri < rdf _ type > < dbo _ film > brack _ close
+ask where brack _ open < dbr _ hudson _ river > < dbo _ sourceregion > < dbr _ north _ river > brack _ close
+select distinct count attr _ open var _ uri attr _ close where brack _ open var _ uri < dbo _ foundationplace > < dbr _ daniel > sep _ dot var _ uri < rdf _ type > < dbo _ company > bra
+select distinct var _ uri where brack _ open < dbr _ the _ skeleton _ dance > < dbo _ animator > var _ uri sep _ dot < dbr _ the _ medit _ attr _ open tv _ series attr _ close > < d
+select distinct var _ uri where brack _ open var _ x < dbo _ owningcompany > < dbr _ microsoft _ windows > sep _ dot var _ uri < dbo _ manufacturer > var _ x sep _ dot var _ uri < rd
+select distinct var _ uri where brack _ open < dbr _ davies > < dbo _ child > var _ x sep _ dot var _ x < dbo _ religion > var _ uri sep _ dot var _ x < rdf _ type > < dbo
+select distinct var _ uri where brack _ open < dbr _ j. _ s. _ kovacs > < dbo _ nationality > var _ uri sep _ dot < dbr _ kansas > < dbo _ country > var _ uri brack _
+select distinct var _ uri where brack _ open var _ uri < dbo _ rivermouth > < dbr _ north _ sea > sep _ dot var _ uri < dbo _ rivermouth > < dbr _ north _ sea > sep _ dot var _ u
+select distinct var _ uri where brack _ open < dbr _ martin _ mcgregor > < dbp _ currentmembers > var _ uri sep _ dot < dbr _ martin _ mork > < dbp _
+select distinct var _ uri where brack _ open < dbr _ kumta > < dbo _ region > var _ uri brack _ close
+select distinct var _ uri where brack _ open var _ x < dbp _ locationcity > < dbr _ mauritius > sep _ dot var _ x < dbp _ location > var _ uri sep _ dot var _ x < rdf _ type
+select distinct var _ uri where brack _ open var _ uri < dbo _ sourceplace > < dbr _ north _ sea > sep _ dot var _ uri < dbo _ rivermouth > < dbr _ north _ sea > sep _ dot var _ u
+select distinct var _ uri where brack _ open var _ x < dbo _ almamater > < dbr _ united _ states _ department _ of _ the _ representatives _ of _ the _ philippines > sep _ dot var _ x < dbo _ president >
+select distinct count attr _ open var _ uri attr _ close where brack _ open var _ x < dbo _ wineregion > < dbr _ mauritius > sep _ dot var _ x < dbo _ sport > var _ uri brack _ close
+select distinct var _ uri where brack _ open < dbr _ the _ adventures _ of _ tom _ attr _ open film attr _ close > < dbp _ writer > var _ uri sep _ dot < dbr _ trinity _ attr _
+select distinct var _ uri where brack _ open < dbr _ george _ mcgregor > < dbo _ restingplace > var _ uri sep _ dot < dbr _ chicago > < dbo _ birthplace > var _ uri brack
+select distinct var _ uri where brack _ open < dbr _ american _ mediterranean _ sea > < dbp _ cities > var _ uri sep _ dot < dbr _ microsoft _ windows > < dbo _ developer > var _
+select distinct count attr _ open var _ uri attr _ close where brack _ open var _ x < dbp _ affiliations > < dbr _ francow > sep _ dot var _ x < dbp _ constituency > var _ uri brack _
+select distinct var _ uri where brack _ open var _ x < dbp _ sourceregion > < dbr _ north _ sea > sep _ dot var _ x < dbp _ location > var _ uri sep _ dot var _ x < rdf _
+select distinct var _ uri where brack _ open var _ x < dbo _ spouse > < dbr _ john _ moscow > sep _ dot var _ x < dbo _ relation > var _ uri sep _ dot brack _ close
+select distinct var _ uri where brack _ open var _ x < dbp _ city > < dbr _ pixar > sep _ dot var _ x < dbo _ owner > var _ uri sep _ dot var _ x < rdf _ type > <
+select distinct var _ uri where brack _ open < dbr _ ford _ frank > < dbo _ parent > var _ uri brack _ close
+select distinct var _ uri where brack _ open var _ x < dbp _ city > < dbr _ california > sep _ dot var _ uri < dbo _ location > var _ x sep _ dot var _ uri < rdf _
+select distinct var _ uri where brack _ open var _ x < dbo _ owningcompany > < dbr _ olifornia > sep _ dot var _ x < dbp _ destinations > var _ uri sep _ dot var _ x < rd
+select distinct var _ uri where brack _ open var _ x < dbp _ currentmembers > < dbr _ michael _ c. > sep _ dot var _ x < dbp _ mascot > var _ uri sep _ dot var _ x <
+select distinct var _ uri where brack _ open < dbr _ polytechnic _ university _ of _ the _ plympics > < dbp _ artist > var _ uri brack _ close
+ask where brack _ open < dbr _ hyundai _ lavita > < dbp _ assembly > < dbr _ chicago > brack _ close
+select distinct var _ uri where brack _ open var _ x < dbo _ child > < dbr _ sweden > sep _ dot var _ x < dbo _ religion > var _ uri sep _ dot brack _ close
+select distinct count attr _ open var _ uri attr _ close where brack _ open var _ uri < dbo _ knownfor > < dbr _ microsoft _ windows > sep _ dot var _ uri < dbo _ knownfor > < db
+ask where brack _ open < dbr _ united _ states _ house > < dbp _ doctoralstudent > < dbr _ arlin > brack _ close
+select distinct var _ uri where brack _ open < dbr _ bobby _ beasley > < dbo _ associatedmusicalartist > var _ uri sep _ dot < dbr _ buckhurst > < dbo _ party > var _ uri bra
+select distinct var _ uri where brack _ open var _ x < dbp _ predecessor > < dbr _ dan _ scott > sep _ dot var _ x < dbo _ author > var _ uri sep _ dot var _ x < rdf _ type
+select distinct var _ uri where brack _ open < dbr _ brian _ deeley > < dbo _ spouse > var _ uri brack _ close
+select distinct var _ uri where brack _ open var _ x < dbp _ headquarters > < dbr _ united _ states > sep _ dot var _ x < dbp _ writer > var _ uri sep _ dot var _ x < rdf _ type >
+select distinct var _ uri where brack _ open < dbr _ g. s. _ mellerdrammer > < dbp _ successor > var _ x sep _ dot var _ x < dbo _ hometown > var _ uri sep _ dot brack _ close
+select distinct var _ uri where brack _ open var _ x < dbo _ album > < dbr _ united _ states > sep _ dot var _ x < dbo _ author > var _ uri sep _ dot var _ x < rdf _ type > < d
+select distinct var _ uri where brack _ open var _ x < dbo _ officiallanguage > < dbr _ new _ york _ city > sep _ dot var _ uri < dbo _ child > var _ x sep _ dot brack _ close
+select distinct var _ uri where brack _ open var _ uri < dbo _ debutteam > < dbr _ san _ francisco > brack _ close
+select distinct var _ uri where brack _ open var _ x < dbp _ parent > < dbr _ sony > sep _ dot var _ x < dbo _ parentcompany > var _ uri sep _ dot var _ x < rdf _ type
+select distinct var _ uri where brack _ open var _ x < dbp _ affiliations > < dbr _ canada > sep _ dot var _ x < dbo _ associatedmusicalartist > var _ uri sep _ dot var _ x < rdf
+select distinct var _ uri where brack _ open var _ uri < dbo _ distributor > < dbr _ cinema _ international _ corporation > sep _ dot var _ uri < dbp _ creator > < dbr _ jendresen > sep _ dot var
+select distinct var _ uri where brack _ open < dbr _ united _ states _ house > < dbp _ services > var _ uri brack _ close
+select distinct var _ uri where brack _ open var _ x < dbo _ spouse > < dbr _ james _ franklin > sep _ dot var _ x < dbo _ restingplace > var _ uri sep _ dot var _ x < rdf _
+select distinct var _ uri where brack _ open var _ uri < dbo _ network > < dbr _ bbc _ hd > sep _ dot var _ uri < rdf _ type > < dbo _ televisionshow > brack _ close
+select distinct var _ uri where brack _ open var _ x < dbp _ producer > < dbr _ michael _ deeley > sep _ dot var _ x < dbp _ writer > var _ uri sep _ dot var _ x < rdf
+select distinct var _ uri where brack _ open var _ uri < dbo _ musiccomposer > < dbr _ germany > sep _ dot var _ uri < rdf _ type > < dbo _ film > brack _ close
+select distinct var _ uri where brack _ open var _ x < dbo _ formerteam > < dbr _ david _ daniel > sep _ dot var _ x < dbo _ team > var _ uri sep _ dot var _ x < rdf
+select distinct count attr _ open var _ uri attr _ close where brack _ open var _ uri < dbp _ type > < dbr _ united _ states > sep _ dot brack _ close
+select distinct var _ uri where brack _ open < dbr _ david _ scherman > < dbo _ birthplace > var _ uri brack _ close
+select distinct count attr _ open var _ uri attr _ close where brack _ open var _ uri < dbo _ nationality > < dbr _ united _ states > sep _ dot brack _ close
+select distinct var _ uri where brack _ open < dbr _ the _ skeleton _ dance > < dbo _ animator > var _ x sep _ dot var _ x < dbo _ child > var _ uri sep _ dot brack _ close
+select distinct count attr _ open var _ uri attr _ close where brack _ open brack _ close
+select distinct count attr _ open var _ uri attr _ close where brack _ open var _ x < dbo _ sport > < dbr _ airport > sep _ dot var _ x < dbo _ sport > var _ uri brack _ close
+select distinct var _ uri where brack _ open < dbr _ buckhurst _ county _ high _ school > < dbo _ localauthority > var _ uri sep _ dot < dbr _ charles _ high _ school > < dbo _ sport >
+select distinct var _ uri where brack _ open < dbr _ polytechnic _ university _ of _ the _ philippi > < dbp _ leader > var _ uri brack _ close
+ask where brack _ open < dbr _ united _ states _ house _ attr _ open united _ states attr _ close > < dbp _ cinematography > < dbr _ united _ states _ house > brack _ close
+ask where brack _ open < dbr _ united _ states _ navy > < dbp _ doctoralstudent > < dbr _ serban _ titeica > brack _ close
+select distinct count attr _ open var _ uri attr _ close where brack _ open brack _ close
+select distinct var _ uri where brack _ open < dbr _ the _ skeleton _ dance > < dbo _ animator > var _ uri sep _ dot < dbr _ tommy _ trinity > < dbp _ knownfor > var _ uri
+select distinct var _ uri where brack _ open var _ uri < dbo _ birthplace > < dbr _ england > sep _ dot var _ uri < rdf _ type > < dbo _ basketballplayer > brack _ close
+select distinct var _ uri where brack _ open var _ uri < dbo _ birthplace > < dbr _ new _ york _ city > sep _ dot var _ uri < dbo _ almamater > < dbr _ frasier > sep _ dot
+select distinct var _ uri where brack _ open var _ uri < dbo _ occupation > < dbr _ sony > brack _ close
+select distinct count attr _ open var _ uri attr _ close where brack _ open brack _ close
+select distinct count attr _ open var _ uri attr _ close where brack _ open var _ x < dbo _ network > < dbr _ bbc > sep _ dot var _ uri < dbp _ network > var _ x sep _ dot var _
+select distinct count attr _ open var _ uri attr _ close where brack _ open var _ x < dbo _ team > < dbr _ new _ york > sep _ dot var _ x < dbo _ formerteam > var _ uri sep _ dot
+select distinct var _ uri where brack _ open var _ uri < dbo _ militaryunit > < dbr _ vmf - 155 > sep _ dot var _ uri < dbo _ militaryunit > < dbr _ kelly _ attr _ open
+select distinct var _ uri where brack _ open var _ x < dbo _ birthplace > < dbr _ united _ states > sep _ dot var _ uri < dbp _ network > var _ x sep _ dot var _ uri < rdf _ type >
+select distinct var _ uri where brack _ open var _ x < dbp _ music > < dbr _ toronto > sep _ dot var _ x < dbp _ writer > var _ uri sep _ dot var _ x < rdf _ type >
+select distinct var _ uri where brack _ open var _ uri < dbo _ militaryunit > < dbr _ vmfrica > brack _ close
+select distinct var _ uri where brack _ open < dbr _ thailand > < dbo _ successor > var _ x sep _ dot var _ x < dbo _ successor > var _ uri sep _ dot brack _ close
+select distinct var _ uri where brack _ open var _ uri < dbo _ developer > < dbr _ jendresen > sep _ dot var _ uri < rdf _ type > < dbo _ company > brack _ close
+select distinct var _ uri where brack _ open < dbr _ the _ street _ attr _ open film attr _ close > < dbp _ keypeople > var _ uri sep _ dot < dbr _ polytechnic _ university _ of _ the _
+select distinct var _ uri where brack _ open var _ uri < dbo _ child > < dbr _ lori _ black > sep _ dot var _ uri < dbo _ child > < dbr _ london > sep _ dot var _ uri <
+select distinct var _ uri where brack _ open var _ uri < dbp _ sourceregion > < dbr _ north - western _ province, _ zambia > sep _ dot var _ uri < dbo _ sourcecountry > < dbr _
+select distinct var _ uri where brack _ open var _ uri < dbo _ almamater > < dbr _ harvard - westlake _ school > sep _ dot var _ uri < dbp _ restingplace > < dbr _ primus _
+select distinct count attr _ open var _ uri attr _ close where brack _ open brack _ close
+select distinct var _ uri where brack _ open var _ x < dbo _ source > < dbr _ malaysian _ river > sep _ dot var _ x < dbo _ sourcecountry > var _ uri sep _ dot var _ x < rdf
+select distinct var _ uri where brack _ open var _ x < dbp _ thememusiccomposer > < dbr _ joel > sep _ dot var _ uri < dbp _ thememusiccomposer > var _ x sep _ dot
+select distinct var _ uri where brack _ open var _ x < dbo _ birthplace > < dbr _ united _ states > sep _ dot var _ x < dbo _ associatedmusicalartist > var _ uri sep _ dot var _ x < rdf _
+select distinct var _ uri where brack _ open < dbr _ middlesbrough _ f. c. > < dbo _ team > var _ uri brack _ close
+select distinct var _ uri where brack _ open < dbr _ w. r. _ w. > < dbp _ city > var _ uri brack _ close
+select distinct var _ uri where brack _ open var _ uri < dbo _ deathcause > < dbr _ united _ states > brack _ close
+select distinct var _ uri where brack _ open var _ x < dbp _ music > < dbr _ toronto > sep _ dot var _ uri < dbp _ music > var _ x sep _ dot var _ uri < rdf _ type
+select distinct count attr _ open var _ uri attr _ close where brack _ open var _ uri < dbp _ currentclub > < dbr _ england > sep _ dot brack _ close
+select distinct var _ uri where brack _ open var _ x < dbo _ restingplace > < dbr _ london > sep _ dot var _ x < dbo _ restingplace > var _ uri sep _ dot var _ x < rdf _ type > <
+select distinct var _ uri where brack _ open < dbr _ tommy _ tucker > < dbp _ notableinstitutions > var _ uri sep _ dot < dbr _ trinity _ college > < dbo _ deathplace > var _
+select distinct var _ uri where brack _ open var _ x < dbo _ child > < dbr _ sweden > sep _ dot var _ x < dbo _ deathplace > var _ uri sep _ dot var _ x < rdf _ type > <
+select distinct var _ uri where brack _ open var _ uri < dbp _ battles > < dbr _ swedish _ language > sep _ dot var _ uri < rdf _ type > < dbo _ film > brack _ close
+select distinct var _ uri where brack _ open var _ x < dbo _ deathplace > < dbr _ toronto > sep _ dot var _ x < dbo _ deathcause > var _ uri sep _ dot var _ x < rdf _ type
+select distinct var _ uri where brack _ open < dbr _ mediterranean _ sea > < dbp _ cities > var _ uri brack _ close
+select distinct var _ uri where brack _ open < dbr _ isa _ attr _ open band attr _ close > < dbp _ writer > var _ uri brack _ close
+ask where brack _ open < dbr _ j. _ s. _ george > < dbp _ placeofburial > < dbr _ william _ c. > brack _ close
+ask where brack _ open < dbr _ fran > < dbp _ currentmembers > < dbr _ stan _ fc > brack _ close
+select distinct var _ uri where brack _ open < dbr _ india _ attr _ open tv _ series attr _ close > < dbp _ starring > var _ uri brack _ close
+select distinct var _ uri where brack _ open < dbr _ clinton _ foundation > < dbp _ keypeople > var _ uri sep _ dot < dbr _ william _ clinton > < dbo _ knownfor > var _ uri
+select distinct count attr _ open var _ uri attr _ close where brack _ open var _ x < dbo _ deathplace > < dbr _ john _ paulson > sep _ dot var _ x < dbo _ deathplace > var _ uri se
+select distinct var _ uri where brack _ open var _ uri < dbp _ currentmembers > < dbr _ jendresen > sep _ dot var _ uri < rdf _ type > < dbo _ university > brack _ close
+select distinct count attr _ open var _ uri attr _ close where brack _ open brack _ close
+select distinct var _ uri where brack _ open var _ x < dbo _ doctoraladvisor > < dbr _ john _ david > sep _ dot var _ uri < dbp _ doctoralstudents > var _ x sep _ dot var _ u
+select distinct var _ uri where brack _ open var _ uri < dbo _ associatedmusicalartist > < dbr _ africa _'s _ attr _ open band attr _ close > sep _ dot var _ uri < rdf _ type >
+select distinct var _ uri where brack _ open var _ uri < dbo _ parent > < dbr _ boston > brack _ close
+select distinct var _ uri where brack _ open var _ x < dbo _ associatedband > < dbr _ london > sep _ dot var _ x < dbo _ religion > var _ uri sep _ dot var _ x < rdf _ type > < d
+select distinct var _ uri where brack _ open < dbr _ cologny _ railway _ station > < dbp _ location > var _ uri brack _ close
+select distinct var _ uri where brack _ open var _ uri < dbp _ foundation > < dbr _ new _ mexico > sep _ dot var _ uri < dbp _ products > < dbr _ australia > sep _ dot var
+select distinct var _ uri where brack _ open < dbr _ george _ madison > < dbo _ birthplace > var _ uri brack _ close
+select distinct var _ uri where brack _ open var _ uri < dbp _ doctoralstudents > < dbr _ serban _ titeica > sep _ dot var _ uri < rdf _ type > < dbo _ person > brack _ close
+select distinct var _ uri where brack _ open var _ x < dbp _ foundation > < dbr _ united _ states > sep _ dot var _ x < dbp _ owner > var _ uri sep _ dot brack _ close
+select distinct count attr _ open var _ uri attr _ close where brack _ open var _ uri < dbo _ manufacturer > < dbr _ foxconn > sep _ dot brack _ close
+select distinct var _ uri where brack _ open var _ x < dbp _ leadername > < dbr _ louis _ louis > sep _ dot var _ uri < dbo _ leader > var _ x sep _ dot var _ uri < r
+ask where brack _ open < dbr _ stan _ lee > < dbp _ currentteam > < dbr _ stan _ lee > brack _ close
+select distinct var _ uri where brack _ open < dbr _ microsoft _ windows > < dbo _ debutteam > var _ uri brack _ close
+select distinct var _ uri where brack _ open var _ x < dbo _ subsequentwork > < dbr _ london > sep _ dot var _ x < dbo _ starring > var _ uri sep _ dot var _ x < rdf _ type > < d
+select distinct var _ uri where brack _ open var _ x < dbp _ cities > < dbr _ canada > sep _ dot var _ x < dbp _ crosses > var _ uri sep _ dot brack _ close
+select distinct var _ uri where brack _ open var _ uri < dbo _ militarybranch > < dbr _ islam > sep _ dot var _ uri < dbo _ militaryunit > < dbr _ north _ sea > sep _ dot var _
+select distinct var _ uri where brack _ open var _ uri < dbo _ almamater > < dbr _ harvard - westlake _ school > sep _ dot var _ uri < dbo _ almamater > < dbr _ harvard _
+select distinct var _ uri where brack _ open var _ uri < dbp _ writer > < dbr _ erik _ jendresen > sep _ dot var _ uri < rdf _ type > < dbo _ film > brack _ close
+select distinct var _ uri where brack _ open < dbr _ jon _ speel > < dbo _ knownfor > var _ uri brack _ close
+select distinct var _ uri where brack _ open var _ x < dbo _ almamater > < dbr _ moscow _ university > sep _ dot var _ x < dbp _ debutteam > var _ uri sep _ dot var _ x <
+select distinct count attr _ open var _ uri attr _ close where brack _ open var _ x < dbo _ award > < dbr _ timeform > sep _ dot var _ x < dbo _ award > var _ uri brack _ close
+select distinct var _ uri where brack _ open var _ uri < dbo _ team > < dbr _ new _ york _ city > brack _ close
+ask where brack _ open < dbr _ george > < dbo _ hometown > < dbr _ united _ states > brack _ close
+select distinct count attr _ open var _ uri attr _ close where brack _ open var _ x < dbo _ nationality > < dbr _ united _ states > sep _ dot var _ x < dbo _ developer > var _ uri sep _ dot brack _
+select distinct var _ uri where brack _ open < dbr _ george _ mcgregor > < dbp _ playedfor > var _ uri sep _ dot < dbr _ polytechnic _ university _ of _ the _ philip
+select distinct var _ uri where brack _ open var _ uri < dbo _ academicadvisor > < dbr _ san _ francisco > brack _ close
+select distinct var _ uri where brack _ open var _ x < dbo _ developer > < dbr _ boston > sep _ dot var _ x < dbo _ owner > var _ uri sep _ dot var _ x < rdf _ type > < d
+select distinct var _ uri where brack _ open < dbr _ michael _ powell _ attr _ open film attr _ close > < dbo _ sport > var _ uri brack _ close
+select distinct var _ uri where brack _ open < dbr _ pixar > < dbp _ successor > var _ x sep _ dot var _ x < dbo _ leader > var _ uri sep _ dot brack _ close
+select distinct var _ uri where brack _ open var _ uri < dbo _ manufacturer > < dbr _ fox _ broadcasting _ company > sep _ dot var _ uri < rdf _ type > < dbo _ televisionshow > brack _ close
+select distinct var _ uri where brack _ open < dbr _ charles _ lemacher > < dbo _ award > var _ uri sep _ dot < dbr _ chicago > < dbo _ award > var _ uri sep _ dot bra
+select distinct var _ uri where brack _ open var _ uri < dbo _ related > < dbr _ the _ san _ francisco > sep _ dot var _ uri < dbo _ child > < dbr _ islam > sep _ dot
+select distinct var _ uri where brack _ open < dbr _ daund _ junction _ railway _ station > < dbo _ country > var _ uri sep _ dot < dbr _ dan _ joseph _ attr _ open united _ states attr _ close
+select distinct var _ uri where brack _ open var _ x < dbo _ locatedinarea > < dbr _ india > sep _ dot var _ x < dbo _ sourcecountry > var _ uri sep _ dot var _ x < rdf _
+select distinct var _ uri where brack _ open var _ x < dbo _ militaryunit > < dbr _ vitish - westlake _ school > sep _ dot var _ x < dbo _ birthplace > var _ uri sep _ dot brack _ close
+select distinct var _ uri where brack _ open var _ uri < dbp _ neighboringmunicipalities > < dbr _ chicago > sep _ dot var _ uri < dbp _ doctoraladvisor > < dbr _ john _
+select distinct var _ uri where brack _ open var _ x < dbp _ producer > < dbr _ erik _ bork > sep _ dot var _ uri < dbp _ distributor > var _ x sep _ dot var _ uri < rd
+select distinct count attr _ open var _ uri attr _ close where brack _ open var _ uri < dbo _ nationality > < dbr _ united _ states > sep _ dot brack _ close
+select distinct var _ uri where brack _ open < dbr _ kumta > < dbo _ location > var _ uri brack _ close
+select distinct var _ uri where brack _ open var _ uri < dbo _ openingtheme > < dbr _ fox _ attr _ open united _ states attr _ close > sep _ dot var _ uri < dbp _ distributor > < dbr _
+select distinct var _ uri where brack _ open < dbr _ wilfred _ mcgregor > < dbp _ education > var _ uri sep _ dot < dbr _ franklin _ w. _ oxford > < dbp _
+select distinct var _ uri where brack _ open < dbr _ burro > < dbo _ sport > var _ uri brack _ close
+select distinct var _ uri where brack _ open var _ uri < dbp _ neighboringmunicipalities > < dbr _ cologny > sep _ dot var _ uri < dbp _ neighboringmunicipalities > < dbr _ da
+select distinct count attr _ open var _ uri attr _ close where brack _ open brack _ close
+select distinct var _ uri where brack _ open < dbr _ abraska > < dbo _ nationality > var _ uri brack _ close
+select distinct var _ uri where brack _ open var _ x < dbo _ almamater > < dbr _ schigan > sep _ dot var _ x < dbo _ deathplace > var _ uri sep _ dot brack _ close
+select distinct count attr _ open var _ uri attr _ close where brack _ open var _ x < dbp _ firstteam > < dbr _ london > sep _ dot var _ x < dbo _ hometown > var _ uri brack _ close
+select distinct var _ uri where brack _ open < dbr _ linda _ lincow > < dbp _ city > var _ uri brack _ close
+select distinct var _ uri where brack _ open var _ x < dbo _ mouthcountry > < dbr _ moscow _ river > sep _ dot var _ x < dbo _ river > var _ uri sep _ dot var _ x < rd
+select distinct var _ uri where brack _ open < dbr _ the _ skeleton _ dance > < dbo _ animator > var _ uri brack _ close
+select distinct var _ uri where brack _ open var _ x < dbo _ recordlabel > < dbr _ records > sep _ dot var _ uri < dbp _ music > var _ x sep _ dot var _ uri < rdf _ type >
+select distinct var _ uri where brack _ open var _ uri < dbp _ products > < dbr _ microsoft _ windows > brack _ close
+ask where brack _ open < dbr _ hyundai _ lavita > < dbp _ assembly > < dbr _ john _ musee > brack _ close
+ask where brack _ open < dbr _ swedish _ river > < dbo _ stylisticorigin > < dbr _ stanley > brack _ close
+select distinct var _ uri where brack _ open var _ uri < dbo _ distributor > < dbr _ cinema _ international _ corporation > brack _ close
+select distinct count attr _ open var _ uri attr _ close where brack _ open brack _ close
+select distinct var _ uri where brack _ open var _ x < dbp _ assembly > < dbr _ toronto > sep _ dot var _ x < dbp _ location > var _ uri sep _ dot var _ x < rdf _ type >
+select distinct count attr _ open var _ uri attr _ close where brack _ open var _ x < dbo _ almamater > < dbr _ davies > sep _ dot var _ x < dbo _ deathplace > var _ uri sep _ dot var
+select distinct var _ uri where brack _ open var _ x < dbo _ parentcompany > < dbr _ russell > sep _ dot var _ x < dbo _ owner > var _ uri sep _ dot var _ x < rdf _ type
+ask where brack _ open < dbr _ hyundai _ lavita > < dbp _ currentmembers > < dbr _ lee _ hd > brack _ close
+select distinct var _ uri where brack _ open var _ x < dbo _ locatedinarea > < dbr _ california > sep _ dot var _ x < dbp _ destinations > var _ uri sep _ dot var _ x < rdf
+select distinct var _ uri where brack _ open var _ uri < dbo _ location > < dbr _ russell > sep _ dot var _ uri < dbo _ location > < dbr _ germany > sep _ dot var _ uri <
+select distinct var _ uri where brack _ open var _ uri < dbp _ programminglanguage > < dbr _ c + + > sep _ dot var _ uri < rdf _ type > < dbo _ film > brack _ close
+select distinct var _ uri where brack _ open var _ x < dbo _ rivermouth > < dbr _ north _ river > sep _ dot var _ x < dbo _ source > var _ uri sep _ dot var _ x < rdf _ type > <
+select distinct count attr _ open var _ uri attr _ close where brack _ open var _ x < dbo _ birthplace > < dbr _ wiscons > sep _ dot var _ x < dbo _ associatedmusicalartist > var _ uri sep _
+select distinct var _ uri where brack _ open var _ x < dbp _ religiousaffiliation > < dbr _ jendresen > sep _ dot var _ x < dbp _ mascot > var _ uri sep _ dot var _ x < r
+select distinct var _ uri where brack _ open < dbr _ american _ mediterranean _ sea > < dbp _ company > var _ x sep _ dot var _ x < dbo _ locationcity > var _ uri sep _ dot brack
+select distinct var _ uri where brack _ open var _ x < dbp _ schooltype > < dbr _ toronto > sep _ dot var _ x < dbo _ sport > var _ uri sep _ dot var _ x < rdf _ type >
+select distinct var _ uri where brack _ open < dbr _ joseph _ mcgregor > < dbp _ knownfor > var _ uri sep _ dot < dbr _ charles _ brack _ close
+select distinct count attr _ open var _ uri attr _ close where brack _ open var _ x < dbp _ creator > < dbr _ clinton _ award > sep _ dot var _ uri < dbo _ manufacturer > var _ x sep _ dot
+select distinct var _ uri where brack _ open < dbr _ wxme > < dbp _ successor > var _ x sep _ dot var _ x < dbo _ restingplace > var _ uri sep _ dot var _ x < rdf _ type >
+select distinct var _ uri where brack _ open < dbr _ henri > < dbo _ locationcity > var _ uri brack _ close
+select distinct var _ uri where brack _ open var _ uri < dbo _ location > < dbr _ indiana > sep _ dot var _ uri < dbo _ location > < dbr _ massachusetts > sep _ dot var _ uri
+select distinct var _ uri where brack _ open var _ x < dbp _ parent > < dbr _ kate > sep _ dot var _ x < dbp _ parentcompany > var _ uri sep _ dot var _ x < rdf _
+select distinct var _ uri where brack _ open var _ uri < dbp _ products > < dbr _ boeing _ franke > sep _ dot var _ uri < dbo _ parentcomposer > < dbr _ chicago > se
+select distinct var _ uri where brack _ open < dbr _ george _ uv > < dbo _ parentcompany > var _ uri sep _ dot < dbr _ louis > < dbo _ birthplace > var _ uri brack _
+select distinct var _ uri where brack _ open var _ x < dbo _ deathplace > < dbr _ toronto > sep _ dot var _ x < dbp _ religion > var _ uri sep _ dot var _ x < rdf _ type >
+select distinct var _ uri where brack _ open < dbr _ kumta > < dbp _ programminglanguage > var _ uri sep _ dot < dbr _ frank _ kelly > < dbo _ associatedmusicalartist > var _ u
+select distinct var _ uri where brack _ open var _ uri < dbp _ currentmembers > < dbr _ chicago > brack _ close
+select distinct var _ uri where brack _ open < dbr _ he's _ a _ house > < dbp _ producer > var _ uri brack _ close
+select distinct count attr _ open var _ uri attr _ close where brack _ open var _ x < dbp _ draftteam > < dbr _ germany > sep _ dot var _ uri < dbo _ team > var _ x sep _ dot
+select distinct var _ uri where brack _ open < dbr _ mickey's _ mellerdrammer > < dbp _ cinematography > var _ x sep _ dot var _ x < dbo _ religion > var _ uri sep _ dot brack _ close
+select distinct var _ uri where brack _ open < dbr _ french _ high _ school > < dbo _ college > var _ x sep _ dot var _ x < dbp _ mascot > var _ uri sep _ dot brack _ close
+select distinct var _ uri where brack _ open var _ uri < dbp _ cinematography > < dbr _ jordan _ cronenweth > sep _ dot var _ uri < dbo _ associatedmusicalartist > < dbr _ g
+select distinct var _ uri where brack _ open var _ uri < dbo _ mouthmountain > < dbr _ australia > brack _ close
+select distinct var _ uri where brack _ open < dbr _ martin _ mcgregor > < dbp _ knownfor > var _ uri sep _ dot < dbr _ alfred _ mcgregor > < dbp _
+select distinct count attr _ open var _ uri attr _ close where brack _ open var _ x < dbo _ birthplace > < dbr _ united _ states > sep _ dot var _ uri < dbo _ leader > var _ x sep _ dot var _ u
+select distinct var _ uri where brack _ open < dbr _ moscow _ high _ school > < dbo _ country > var _ uri brack _ close
+select distinct var _ uri where brack _ open < dbr _ martin _ morton > < dbp _ locationcountry > var _ uri brack _ close
+select distinct var _ uri where brack _ open var _ uri < dbp _ doctoralstudents > < dbr _ chicago > brack _ close
+ask where brack _ open < dbr _ germany > < dbp _ notableinstruments > < dbr _ germany > brack _ close
+select distinct count attr _ open var _ uri attr _ close where brack _ open var _ uri < dbo _ associatedmusicalartist > < dbr _ boston > sep _ dot var _ uri < dbo _ family > < dbr _
+select distinct var _ uri where brack _ open < dbr _ mediterranean _ sea > < dbp _ cities > var _ uri sep _ dot < dbr _ mediterranean _ sea > < dbo _ location > var _ uri
+ask where brack _ open < dbr _ john _ morton > < dbp _ maininterests > < dbr _ united _ states > brack _ close
+select distinct var _ uri where brack _ open var _ x < dbp _ assembly > < dbr _ toronto > sep _ dot var _ x < dbp _ owner > var _ uri sep _ dot var _ x < rdf _ type >
+select distinct var _ uri where brack _ open var _ x < dbo _ award > < dbr _ berkshire > sep _ dot var _ x < dbo _ award > var _ uri sep _ dot var _ x < rdf _ type > < d
+select distinct var _ uri where brack _ open < dbr _ linda _ hogan > < dbp _ currentmembers > var _ uri sep _ dot < dbr _ houston _ state > < dbp _ location > var _ uri
+select distinct var _ uri where brack _ open var _ uri < dbp _ programminglanguage > < dbr _ c + + > sep _ dot var _ uri < dbo _ operatingsystem > < dbr _ microsoft _ windows >
+select distinct var _ uri where brack _ open var _ uri < dbp _ products > < dbr _ microsoft _ windows > sep _ dot var _ uri < rdf _ type > < dbo _ company > brack _ close
+select distinct var _ uri where brack _ open var _ uri < dbp _ writer > < dbr _ erik _ francisco > sep _ dot brack _ close
+ask where brack _ open < dbr _ hyundai _ lavita > < dbp _ assembly > < dbr _ franke > brack _ close
+select distinct var _ uri where brack _ open var _ x < dbo _ birthplace > < dbr _ united _ states > sep _ dot var _ x < dbo _ birthplace > var _ uri sep _ dot var _ x < rdf _ type > < d
+select distinct var _ uri where brack _ open < dbr _ michael _ deeley > < dbo _ state > var _ x sep _ dot var _ x < dbo _ state > var _ uri sep _ dot brack _ close
+select distinct var _ uri where brack _ open var _ uri < dbo _ almamater > < dbr _ krasiere _ attr _ open united _ states attr _ close > sep _ dot var _ uri < dbo _ religion > < db
+select distinct var _ uri where brack _ open < dbr _ fr. _ agnel _ high _ school > < dbp _ party > var _ uri sep _ dot < dbr _ john _ high _ school > < dbo _ religion >
+select distinct var _ uri where brack _ open < dbr _ george _ uv > < dbo _ tenant > var _ x sep _ dot var _ x < dbo _ tenant > var _ uri sep _ dot brack _ close
+select distinct count attr _ open var _ uri attr _ close where brack _ open var _ x < dbp _ battles > < dbr _ levi _ levi > sep _ dot var _ x < dbp _ battles > var _ uri brack _
+select distinct var _ uri where brack _ open var _ x < dbp _ headquarters > < dbr _ united _ states > sep _ dot var _ uri < dbo _ relative > var _ x sep _ dot brack _ close
+select distinct var _ uri where brack _ open < dbr _ bob _ bergman > < dbo _ nationality > var _ x sep _ dot var _ x < dbo _ birthplace > var _ uri sep _ dot var _ x < rdf _ type
+select distinct var _ uri where brack _ open < dbr _ michael _ powell _ attr _ open american _ football attr _ close > < dbo _ deathplace > var _ uri sep _ dot < dbr _ charles _
+select distinct var _ uri where brack _ open < dbr _ george _ madison > < dbo _ birthplace > var _ uri sep _ dot < dbr _ american _ mediterranean > < dbo _ birthplace > var _ uri
+select distinct var _ uri where brack _ open var _ uri < dbo _ company > < dbr _ playtone > sep _ dot var _ uri < dbp _ company > < dbr _ playtone > sep _ dot var _ uri < d
+select distinct var _ uri where brack _ open < dbr _ michael _ johnson > < dbo _ birthplace > var _ uri brack _ close
+ask where brack _ open < dbr _ australia > < dbo _ sourcemountain > < dbr _ australia > brack _ close
+select distinct count attr _ open var _ uri attr _ close where brack _ open var _ x < dbp _ mascot > < dbr _ united _ states > sep _ dot var _ x < dbo _ party > var _ uri brack _ close
+select distinct var _ uri where brack _ open var _ x < dbp _ network > < dbr _ bbc _ television > sep _ dot var _ uri < dbp _ network > var _ x sep _ dot var _ uri < rdf
+select distinct var _ uri where brack _ open < dbr _ k. _ hogan > < dbo _ nationality > var _ uri brack _ close
+select distinct var _ uri where brack _ open var _ x < dbo _ almamater > < dbr _ charles, _ california > sep _ dot var _ x < dbo _ award > var _ uri sep _ dot var _ x
+select distinct var _ uri where brack _ open var _ uri < dbo _ spouse > < dbr _ ptolemy _ xi _ of _ egypt > sep _ dot var _ uri < dbo _ spouse > < dbr _ ptolem
+select distinct var _ uri where brack _ open var _ x < dbp _ headquarters > < dbr _ united _ states > sep _ dot var _ x < dbp _ mascot > var _ uri sep _ dot var _ x < rdf _ type >
+select distinct var _ uri where brack _ open var _ x < dbo _ location > < dbr _ united _ states > sep _ dot var _ x < dbo _ knownfor > var _ uri sep _ dot var _ x < rdf _ type >
+select distinct count attr _ open var _ uri attr _ close where brack _ open var _ x < dbp _ city > < dbr _ michael _ deeley > sep _ dot var _ x < dbo _ sport > var _ uri sep _
+select distinct var _ uri where brack _ open var _ uri < dbo _ musiccomposer > < dbr _ henry _ attr _ open band attr _ close > sep _ dot var _ uri < dbp _ music > < dbr
+select distinct var _ uri where brack _ open var _ x < dbp _ leadername > < dbr _ toronto > sep _ dot var _ x < dbo _ leadername > var _ uri sep _ dot var _ x < rdf _ type
+select distinct var _ uri where brack _ open < dbr _ henry _ moscow > < dbp _ affiliation > var _ uri brack _ close
+select distinct var _ uri where brack _ open var _ uri < dbo _ sourcemountain > < dbr _ united _ states > brack _ close
+select distinct var _ uri where brack _ open < dbr _ kumta > < dbo _ debutteam > var _ x sep _ dot var _ x < dbp _ debutteam > var _ uri sep _ dot var _ x < rdf
+select distinct var _ uri where brack _ open var _ x < dbo _ honours > < dbr _ sweden > sep _ dot var _ x < dbo _ award > var _ uri sep _ dot var _ x < rdf _ type > < d
+ask where brack _ open < dbr _ louis _ lavita > < dbp _ managerclubs > < dbr _ liliya _ louie > brack _ close
+select distinct var _ uri where brack _ open var _ x < dbp _ firstteam > < dbr _ syndication > sep _ dot var _ x < dbp _ party > var _ uri sep _ dot brack _ close
+select distinct var _ uri where brack _ open var _ uri < dbo _ almamater > < dbr _ harvard - westlake _ school > sep _ dot var _ uri < dbp _ doctoraladvisor > < dbr _ georg
+select distinct var _ uri where brack _ open var _ x < dbo _ almamater > < dbr _ ontario > sep _ dot var _ x < dbo _ almamater > var _ uri sep _ dot var _ x < rdf _
+select distinct var _ uri where brack _ open var _ uri < dbo _ manufacturer > < dbr _ sony > sep _ dot var _ uri < rdf _ type > < dbo _ person > brack _ close
+select distinct var _ uri where brack _ open var _ x < dbp _ assembly > < dbr _ toronto > sep _ dot var _ x < dbp _ nearestcity > var _ uri sep _ dot var _ x < rdf _ type
+select distinct var _ uri where brack _ open var _ uri < dbo _ deathplace > < dbr _ toronto > sep _ dot var _ uri < rdf _ type > < dbo _ person > brack _ close
+select distinct var _ uri where brack _ open < dbr _ michael _ philippines > < dbp _ debutteam > var _ uri sep _ dot < dbr _ michael _ philippines > < dbp
+select distinct var _ uri where brack _ open var _ x < dbp _ currentmembers > < dbr _ brian _ deeley > sep _ dot var _ x < dbp _ battles > var _ uri sep _ dot var _ x < r
+select distinct var _ uri where brack _ open var _ x < dbp _ designer > < dbr _ maryland > sep _ dot var _ x < dbp _ religion > var _ uri sep _ dot var _ x < rdf _ type >
+select distinct var _ uri where brack _ open < dbr _ john _ of _ north _ sea > < dbp _ artist > var _ uri sep _ dot < dbr _ north _ sea > < dbp _ cities > var _ uri bra
+ask where brack _ open < dbr _ hudson _ river > < dbo _ sourceregion > < dbr _ river > brack _ close
+select distinct var _ uri where brack _ open < dbr _ wilfred _ mcgregor > < dbp _ residence > var _ x sep _ dot var _ x < dbo _ birthplace > var _ uri sep _ dot brack _ close
+select distinct var _ uri where brack _ open var _ uri < dbo _ producer > < dbr _ michael _ deeley > sep _ dot var _ uri < rdf _ type > < dbo _ film > brack _ close
+select distinct count attr _ open var _ uri attr _ close where brack _ open var _ uri < dbp _ music > < dbr _ michael _ deeley > sep _ dot brack _ close
+ask where brack _ open < dbr _ harvey > < dbo _ sourcemountain > < dbr _ harris > brack _ close
+select distinct count attr _ open var _ uri attr _ close where brack _ open var _ x < dbp _ producer > < dbr _ michael _ c. > sep _ dot var _ x < dbp _ producer > var _ uri sep
+select distinct var _ uri where brack _ open var _ x < dbo _ deathplace > < dbr _ united _ states > sep _ dot var _ x < dbo _ deathcause > var _ uri sep _ dot var _ x < rdf _ type
+select distinct var _ uri where brack _ open var _ uri < dbo _ managerclub > < dbr _ england _ national _ football > brack _ close
+select distinct var _ uri where brack _ open var _ uri < dbo _ network > < dbr _ fox _ broadcasting _ company > sep _ dot var _ uri < dbp _ network > < dbr _ fox _ broadcasting _ company > sep _ dot
+select distinct count attr _ open var _ uri attr _ close where brack _ open var _ uri < dbp _ company > < dbr _ fox _ broadcasting _ company > sep _ dot var _ uri < dbp _ company > < dbr _
+select distinct var _ uri where brack _ open var _ uri < dbo _ child > < dbr _ john _ russell > sep _ dot var _ uri < dbo _ child > < dbr _ francisco _ john _
+select distinct var _ uri where brack _ open var _ uri < dbp _ pastmembers > < dbr _ joe _ jonas > sep _ dot var _ uri < dbp _ pastmembers > < dbr _ kev
+select distinct var _ uri where brack _ open var _ uri < dbo _ locationcity > < dbr _ harris _ attr _ open company attr _ close > sep _ dot var _ uri < rdf _ type > < dbo _ company >
+select distinct var _ uri where brack _ open var _ uri < dbo _ associatedmusicalartist > < dbr _ london > sep _ dot var _ uri < dbo _ associatedmusicalartist > < dbr _ liga > sep _
+select distinct var _ uri where brack _ open var _ x < dbo _ locatedinarea > < dbr _ india > sep _ dot var _ x < dbp _ owner > var _ uri sep _ dot var _ x < rdf _ type >
+select distinct var _ uri where brack _ open < dbr _ william _ frank > < dbo _ child > var _ x sep _ dot var _ x < dbo _ birthplace > var _ uri sep _ dot brack _ close
+select distinct var _ uri where brack _ open < dbr _ john _ madison > < dbo _ deathplace > var _ uri brack _ close
+select distinct var _ uri where brack _ open < dbr _ google _ bridge > < dbo _ author > var _ uri brack _ close
+select distinct var _ uri where brack _ open var _ x < dbo _ religion > < dbr _ chicago > sep _ dot var _ x < dbo _ religion > var _ uri sep _ dot brack _ close
+select distinct var _ uri where brack _ open < dbr _ kumta > < dbo _ religion > var _ uri brack _ close
+select distinct var _ uri where brack _ open < dbr _ american _ mediterranean _ sea > < dbp _ cities > var _ uri sep _ dot < dbr _ north _ america > < dbp _ country > var
+select distinct var _ uri where brack _ open < dbr _ patts _ attr _ open musical attr _ close > < dbp _ starring > var _ uri brack _ close
+select distinct var _ uri where brack _ open var _ x < dbp _ affiliations > < dbr _ boston > sep _ dot var _ x < dbp _ mascot > var _ uri sep _ dot var _ x < rdf _ type
+select distinct var _ uri where brack _ open < dbr _ russell _ t _ davies > < dbo _ hometown > var _ uri brack _ close
+select distinct var _ uri where brack _ open var _ uri < dbo _ location > < dbr _ indiana > brack _ close
+select distinct var _ uri where brack _ open < dbr _ microsoft _ company > < dbo _ manufacturer > var _ x sep _ dot var _ x < dbp _ developer > var _ uri sep _ dot var _ x < rdf _ type
+select distinct var _ uri where brack _ open < dbr _ kumta > < dbo _ religion > var _ uri brack _ close
+select distinct var _ uri where brack _ open < dbr _ henry _ moscow > < dbo _ religion > var _ uri brack _ close
+select distinct count attr _ open var _ uri attr _ close where brack _ open var _ uri < dbp _ cities > < dbr _ england > sep _ dot brack _ close
+select distinct var _ uri where brack _ open < dbr _ daund _ junction _ railway _ station > < dbo _ country > var _ uri sep _ dot < dbr _ dan _ oxford > < dbp _ owner > var _ uri
+select distinct var _ uri where brack _ open < dbr _ p. _ demieville > < dbp _ battles > var _ uri sep _ dot < dbr _ steven _ c. _ g. _ m. _ changin > < d
+select distinct var _ uri where brack _ open var _ uri < dbp _ phylum > < dbr _ chordate > sep _ dot var _ uri < rdf _ type > < dbo _ film > brack _ close
+select distinct var _ uri where brack _ open < dbr _ linda _ hogan > < dbp _ successor > var _ x sep _ dot var _ x < dbo _ hometown > var _ uri sep _ dot brack _ close
+ask where brack _ open < dbr _ daniel > < dbp _ currentmembers > < dbr _ joe _ david > brack _ close
+ask where brack _ open < dbr _ frank _ francisco > < dbp _ currentmembers > < dbr _ robert _ francisco > brack _ close
+select distinct var _ uri where brack _ open < dbr _ michael _ m. _ m. > < dbp _ owner > var _ uri brack _ close
+select distinct var _ uri where brack _ open var _ uri < dbo _ restingplace > < dbr _ north _ sea > sep _ dot var _ uri < dbo _ restingplace > < dbr _ north _ sea > sep _ dot var _ u
+select distinct var _ uri where brack _ open var _ x < dbp _ city > < dbr _ california > sep _ dot var _ x < dbo _ series > var _ uri sep _ dot var _ x < rdf _ type
+select distinct var _ uri where brack _ open < dbr _ jon _ speelman > < dbo _ knownfor > var _ uri sep _ dot < dbr _ kansas > < dbo _ leader > var _ uri brack _
+select distinct var _ uri where brack _ open var _ uri < dbp _ thememusiccomposer > < dbr _ jendresen > sep _ dot var _ uri < dbp _ thememusiccomposer > < dbr _
+select distinct count attr _ open var _ uri attr _ close where brack _ open var _ x < dbo _ developer > < dbr _ bbc > sep _ dot var _ x < dbp _ genre > var _ uri sep _ dot brack
+select distinct var _ uri where brack _ open < dbr _ clark > < dbp _ headquarters > var _ uri brack _ close
+select distinct var _ uri where brack _ open < dbr _ the _ canadian _ grand _ prix > < dbp _ poledriver > var _ uri brack _ close
+select distinct var _ uri where brack _ open var _ x < dbp _ restingplace > < dbr _ al - al - alta > sep _ dot var _ uri < dbo _ manufacturer > var _ x sep _ dot brack _ close
+select distinct var _ uri where brack _ open var _ uri < dbo _ sourceregion > < dbr _ indiana > brack _ close
+ask where brack _ open < dbr _ hyundai _ lavita > < dbp _ placeofburial > < dbr _ latifah > brack _ close
+select distinct var _ uri where brack _ open var _ x < dbo _ deathplace > < dbr _ california > sep _ dot var _ x < dbo _ deathplace > var _ uri sep _ dot brack _ close
+ask where brack _ open < dbr _ the _ incredibles _ attr _ open musical attr _ close > < dbo _ formerbandmember > < dbr _ chicago > brack _ close
+select distinct var _ uri where brack _ open var _ x < dbo _ birthplace > < dbr _ kumta > sep _ dot var _ uri < dbp _ city > var _ x sep _ dot var _ uri < rdf _ type >
+select distinct count attr _ open var _ uri attr _ close where brack _ open var _ x < dbp _ manager > < dbr _ michael _ fc > sep _ dot var _ x < dbo _ formerteam > var _ uri se
+select distinct var _ uri where brack _ open var _ uri < dbp _ products > < dbr _ united _ states _ house _ of _ the _ the _ philippines > sep _ dot var _ uri < rdf _ type > < d
+select distinct var _ uri where brack _ open var _ uri < dbp _ managerclubs > < dbr _ england _ national _ football _ team > sep _ dot var _ uri < dbp _ nationalteam > < dbr _
+select distinct var _ uri where brack _ open < dbr _ tommy _ tucker > < dbp _ city > var _ uri brack _ close
+ask where brack _ open < dbr _ julia _ char > < dbp _ pastmembers > < dbr _ chicago > brack _ close
+select distinct var _ uri where brack _ open < dbr _ william _ william _ williams > < dbo _ relative > var _ uri brack _ close
+select distinct var _ uri where brack _ open var _ x < dbo _ locatedinarea > < dbr _ india > sep _ dot var _ x < dbp _ location > var _ uri sep _ dot var _ x < rdf _ type >
+select distinct var _ uri where brack _ open < dbr _ the _ skeleton _ dance > < dbo _ award > var _ x sep _ dot var _ x < dbo _ award > var _ uri sep _ dot brack _ close
+select distinct var _ uri where brack _ open var _ uri < dbo _ manufacturer > < dbr _ sony > sep _ dot brack _ close
+select distinct var _ uri where brack _ open var _ x < dbp _ parent > < dbr _ new _ york _ city > sep _ dot var _ x < dbp _ owner > var _ uri sep _ dot var _ x < rdf
+select distinct var _ uri where brack _ open var _ x < dbp _ owner > < dbr _ england > sep _ dot var _ x < dbp _ owner > var _ uri sep _ dot var _ x < rdf _ type >
+select distinct var _ uri where brack _ open < dbr _ moscow - tv > < dbo _ almamater > var _ uri sep _ dot < dbr _ moscow > < dbo _ almamater > var _ uri
+select distinct var _ uri where brack _ open var _ x < dbo _ location > < dbr _ united _ states > sep _ dot var _ uri < dbp _ location > var _ x sep _ dot var _ uri < rdf _ type >
+select distinct var _ uri where brack _ open var _ uri < dbo _ child > < dbr _ lori _ black > sep _ dot var _ uri < dbp _ restingplace > < dbr _ london > sep _ dot var _ u
+ask where brack _ open < dbr _ new _ york _ high _ school > < dbo _ routeend > < dbr _ arlin > brack _ close
+select distinct var _ uri where brack _ open var _ uri < dbo _ sourcecountry > < dbr _ moscow > brack _ close
+select distinct var _ uri where brack _ open < dbr _ jonas _ g. _ george > < dbp _ mascot > var _ uri sep _ dot < dbr _ clinton _ high _ school > < dbp _ mascot >
+select distinct var _ uri where brack _ open < dbr _ martin _ michael > < dbp _ nationality > var _ uri brack _ close
+select distinct var _ uri where brack _ open var _ x < dbo _ birthplace > < dbr _ charles, _ new _ york > sep _ dot var _ x < dbo _ birthplace > var _ uri sep _ dot brack _ close
+select distinct var _ uri where brack _ open < dbr _ kumta > < dbp _ leadername > var _ uri sep _ dot < dbr _ francisco _ kelly > < dbo _ religion > var _ uri brack _
+select distinct var _ uri where brack _ open < dbr _ mediterranean _ sea > < dbp _ cities > var _ uri brack _ close
+select distinct var _ uri where brack _ open < dbr _ fcw _ mcgregor > < dbp _ currentclub > var _ uri brack _ close
+ask where brack _ open < dbr _ jordan _ river > < dbo _ musicalbandmember > < dbr _ gibb > brack _ close
+select distinct var _ uri where brack _ open < dbr _ robert _ sarvis > < dbo _ parentcompany > var _ uri sep _ dot < dbr _ robert _ sarvis > < dbo _ parent > var _ uri
+select distinct var _ uri where brack _ open var _ x < dbp _ operatingsystem > < dbr _ microsoft _ windows > sep _ dot var _ x < dbo _ developer > var _ uri sep _ dot var _ x < rd
+select distinct var _ uri where brack _ open var _ x < dbp _ owner > < dbr _ bbc > sep _ dot var _ x < dbp _ owner > var _ uri sep _ dot var _ x < rdf _ type >
+select distinct var _ uri where brack _ open < dbr _ isa _ attr _ open band attr _ close > < dbp _ keypeople > var _ uri brack _ close
+select distinct var _ uri where brack _ open < dbr _ maharashtra _ grand _ prix > < dbp _ firstdriver > var _ uri brack _ close
+select distinct var _ uri where brack _ open var _ x < dbo _ successor > < dbr _ pixar > sep _ dot var _ x < dbo _ country > var _ uri sep _ dot var _ x < rdf _ type > < d
+select distinct var _ uri where brack _ open var _ x < dbo _ owningcompany > < dbr _ chicago > sep _ dot var _ uri < dbp _ team > var _ x sep _ dot var _ uri < rdf
+select distinct var _ uri where brack _ open < dbr _ sam _ bergman > < dbo _ successor > var _ uri brack _ close
+select distinct count attr _ open var _ uri attr _ close where brack _ open var _ x < dbo _ associatedmusicalartist > < dbr _ kumta > sep _ dot var _ uri < dbo _ associatedmusicalartist > var _
+select distinct var _ uri where brack _ open < dbr _ laemmle _ theatres > < dbo _ service > var _ uri sep _ dot < dbr _ jerry _ seincow > < dbp _ owner > var _ uri se
+select distinct var _ uri where brack _ open var _ x < dbp _ headquarters > < dbr _ united _ states > sep _ dot var _ x < dbp _ mascot > var _ uri sep _ dot var _ x < rdf _ type >
+select distinct var _ uri where brack _ open var _ x < dbp _ headquarters > < dbr _ united _ states > sep _ dot var _ x < dbp _ location > var _ uri sep _ dot var _ x < rdf _ type >
+select distinct var _ uri where brack _ open < dbr _ henry _ mcgregor > < dbo _ knownfor > var _ uri sep _ dot < dbr _ wikipedia > < dbo _ knownfor > var _
+select distinct var _ uri where brack _ open var _ x < dbp _ school > < dbr _ new _ york _ school > sep _ dot var _ x < dbp _ party > var _ uri sep _ dot var _ x < rdf
+select distinct var _ uri where brack _ open var _ x < dbo _ recordlabel > < dbr _ kenya > sep _ dot var _ x < dbo _ leadername > var _ uri sep _ dot var _ x < rdf _ type
+select distinct var _ uri where brack _ open < dbr _ linda _ lee > < dbo _ parent > var _ uri brack _ close
+select distinct var _ uri where brack _ open var _ uri < dbp _ thememusiccomposer > < dbr _ j. _ c. > sep _ dot var _ uri < dbp _ thememusiccomposer > < dbr
+select distinct var _ uri where brack _ open < dbr _ john _ bergman > < dbo _ nationality > var _ uri brack _ close
+select distinct var _ uri where brack _ open < dbr _ mediterranean _ sea > < dbp _ cities > var _ uri brack _ close
+select distinct var _ uri where brack _ open var _ x < dbo _ child > < dbr _ sweden > sep _ dot var _ x < dbp _ mascot > var _ uri sep _ dot var _ x < rdf _ type > <
+select distinct count attr _ open var _ uri attr _ close where brack _ open var _ uri < dbo _ family > < dbr _ ape > sep _ dot var _ uri < rdf _ type > < dbo _ person > brack _
+select distinct var _ uri where brack _ open < dbr _ michael _ mcgregor > < dbp _ knownfor > var _ uri sep _ dot < dbr _ john _ moscow > < dbp _
+select distinct var _ uri where brack _ open var _ x < dbo _ locatedinarea > < dbr _ india > sep _ dot var _ x < dbo _ locationcity > var _ uri sep _ dot var _ x < rdf _ type >
+select distinct var _ uri where brack _ open var _ x < dbo _ restingplace > < dbr _ united _ states > sep _ dot var _ x < dbp _ locationcity > var _ uri sep _ dot var _ x < rdf _ type
+select distinct var _ uri where brack _ open < dbr _ united _ states _ house _ of _ representatives _ representatives _ and _ elections, _ and _ and _ olympics > < dbp _ leadername > var _ uri sep _ dot < dbr
+select distinct var _ uri where brack _ open < dbr _ michael _ m. _ sea > < dbp _ owner > var _ uri sep _ dot < dbr _ michael _ sea > < dbp _ owner > var _ uri
+select distinct var _ uri where brack _ open < dbr _ the _ skeleton _ dance > < dbo _ animator > var _ uri brack _ close
+select distinct var _ uri where brack _ open var _ uri < dbo _ rivermouth > < dbr _ north _ sea > sep _ dot var _ uri < rdf _ type > < dbo _ river > brack _ close
+select distinct var _ uri where brack _ open var _ x < dbp _ leadername > < dbr _ christopher _ franke > sep _ dot var _ x < dbo _ almamater > var _ uri sep _ dot var _ x <
+select distinct var _ uri where brack _ open < dbr _ ganz _ uv > < dbo _ parentcompany > var _ uri sep _ dot < dbr _ microsoft _ windows > < dbo _ manufacturer > var _ uri se
+select distinct count attr _ open var _ uri attr _ close where brack _ open var _ uri < dbp _ knownfor > < dbr _ sony > sep _ dot brack _ close
+select distinct count attr _ open var _ uri attr _ close where brack _ open var _ uri < dbp _ currentmembers > < dbr _ francisco _ fer > sep _ dot brack _ close
+select distinct count attr _ open var _ uri attr _ close where brack _ open var _ uri < dbo _ operatingsystem > < dbr _ microsoft _ windows > sep _ dot var _ uri < dbo _ network > < dbr
+select distinct var _ uri where brack _ open var _ uri < dbo _ executiveproducer > < dbr _ jendresen > sep _ dot var _ uri < rdf _ type > < dbo _ televisionshow > brack _ close
+ask where brack _ open < dbr _ the _ incredibles _ attr _ open musical attr _ close > < dbo _ subsequentwork > < dbr _ united _ states > brack _ close
+select distinct var _ uri where brack _ open < dbr _ united _ states _ navy > < dbp _ owner > var _ uri brack _ close
+select distinct var _ uri where brack _ open < dbr _ the _ skeleton _ dance > < dbo _ animator > var _ x sep _ dot var _ x < dbo _ author > var _ uri sep _ dot brack _ close
+select distinct var _ uri where brack _ open var _ x < dbp _ locationcity > < dbr _ toronto > sep _ dot var _ uri < dbo _ location > var _ x sep _ dot brack _ close
+ask where brack _ open < dbr _ kate _ marx > < dbp _ pastmembers > < dbr _ kelly > brack _ close
+select distinct var _ uri where brack _ open < dbr _ the _ skeleton _ dance > < dbo _ animator > var _ x sep _ dot var _ x < dbo _ nationality > var _ uri sep _ dot var _ x < rdf _ type
+select distinct var _ uri where brack _ open var _ uri < dbo _ battle > < dbr _ arlington _ county, _ california > sep _ dot var _ uri < dbo _ child > < dbr _ henry
+select distinct var _ uri where brack _ open var _ uri < dbo _ restingplace > < dbr _ boston > sep _ dot var _ uri < dbp _ location > < dbr _ boston > sep _ dot var _ u
+select distinct var _ uri where brack _ open var _ uri < dbp _ services > < dbr _ new _ york _ city _ francisco > sep _ dot var _ uri < dbp _ services > < dbr _ microsoft
+select distinct var _ uri where brack _ open < dbr _ swedish _ kova > < dbo _ religion > var _ uri sep _ dot < dbr _ stanley _ kovacs > < dbo _ religion > var _ uri sep
