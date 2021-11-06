@@ -11,8 +11,10 @@ def preprocess(f):
 def main():
     # Parse arguments
     parser = argparse.ArgumentParser()
-    parser.add_argument("--gold", dest="gold", required=True)
-    parser.add_argument("--output", dest="output", required=True)
+    parser.add_argument("--gold", dest="gold", required=True,
+                        description="Golden standard file")
+    parser.add_argument("--output", dest="output", required=True,
+                        description="Output file")
     args = parser.parse_args()
 
     # Process files
