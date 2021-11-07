@@ -1,0 +1,500 @@
+select distinct ?uri where { <dbr:itv_( united_states )> <dbo:publisher> ?x . ?x <dbo:product> ?uri . }
+select distinct ?uri where { <dbr:polytechnic_university_of_the_philippines_–_bataan> <dbo:sport> ?uri . <dbr:jose_islam> <dbo:sport> ?uri }
+select distinct ?uri where { <dbr:ren> <dbo:developer> ?uri . <dbr:google> <dbo:developer> ?uri . }
+select distinct count(?uri)where { ?x <dbo:launchsite> <dbr:cape_canaveral_air_force_station> . ?x <dbo:launchsite> ?uri . }
+select distinct ?uri where { <dbr:elizabeth_bay> <dbo:governor> ?uri }
+select distinct ?uri where { ?x <dbo:notablework> <dbr:california> . ?x <dbo:occupation> ?uri . }
+select distinct ?uri where { ?x <dbp:successor> <dbr:boston> . ?x <dbo:president> ?uri . ?x <rdf:type> <dbo:lieutenant> }
+select distinct ?uri where { <dbr:bobby_house> <dbp:location> ?uri }
+select distinct ?uri where { <dbr:teddy_maryland> <dbo:locationcity> ?uri }
+ask where { <dbr:pope_johnson> <dbp:beatifiedby> <dbr:pope_pope_paul> }
+select distinct ?uri where { <dbr:susan_de_costa_rica_( politician )> <dbo:builder> ?uri }
+select distinct ?uri where { ?uri <dbp:broadcastarea> <dbr:mauritius_corporation> }
+select distinct ?uri where { <dbr:he_hein> <dbp:writer> ?uri }
+select distinct ?uri where { <dbr:red_public_system> <dbp:system> ?x . ?x <dbp:headquarters> ?uri . ?x <rdf:type> <dbo:publictransitsystem> }
+select distinct ?uri where { ?x <dbo:recordedin> <dbr:defenceman> . ?x <dbp:recorded> ?uri . }
+select distinct ?uri where { ?x <dbo:author> <dbr:kumta,_korea> . ?x <dbp:publisher> ?uri . ?x <rdf:type> <dbo:publisher> }
+select distinct count(?uri)where { ?x <dbo:computingplatform> <dbr:americans> . ?x <dbp:genre> ?uri . }
+select distinct ?uri where { ?uri <dbp:notableinstruments> <dbr:les_paul> . }
+select distinct ?uri where { ?uri <dbp:mission> <dbr:gemini_8> . ?uri <rdf:type> <dbo:book> }
+select distinct ?uri where { ?x <dbp:firstteam> <dbr:coloradodara_prix> . ?x <dbo:firstdriver> ?uri . ?x <rdf:type> <dbo:grandprix> }
+select distinct ?uri where { ?x <dbp:spouse> <dbr:wisconsin> . ?uri <dbo:spouse> ?x . }
+select distinct ?uri where { ?x <dbp:employer> <dbr:stev_( united_states )> . ?x <dbo:birthplace> ?uri . }
+select distinct ?uri where { ?uri <dbo:executiveproducer> <dbr:animal> }
+select distinct ?uri where { <dbr:rene_riley> <dbo:citizenship> ?uri }
+select distinct ?uri where { <dbr:arabic_language> <dbp:language> ?x . ?x <dbo:region> ?uri . ?x <rdf:type> <dbo:ethnicgroup> }
+select distinct count(?uri)where { ?x <dbo:city> <dbr:south_carolina> . ?x <dbp:area> ?uri }
+select distinct ?uri where { ?x <dbo:knownfor> <dbr:new_orlo> . ?x <dbp:knownfor> ?uri . }
+ask where { <dbr:united_states_island> <dbp:headcoach> <dbr:la._t._york> }
+select distinct ?uri where { ?x <dbp:debutteam> <dbr:pantherland> . ?x <dbp:debutteam> ?uri . }
+select distinct ?uri where { ?uri <dbo:executiveproducer> <dbr:nova> . ?uri <rdf:type> <dbo:televisionshow> }
+select distinct ?uri where { ?uri <dbo:network> <dbr:bbc_hd> . ?uri <rdf:type> <dbo:televisionshow> }
+ask where { <dbr:germany> <dbo:mayor> <dbr:gregg_kaminis> }
+select distinct ?uri where { ?x <dbp:headquarters> <dbr:coloradodara_park> . ?x <dbp:headquarters> ?uri . ?x <rdf:type> <dbo:organisation> }
+ask where { <dbr:amc_marx> <dbp:currentclub> <dbr:abique> }
+select distinct ?uri where { ?x <dbo:occupation> <dbr:roston_americans> . ?x <dbo:country> ?uri . ?x <rdf:type> <dbo:country> }
+select distinct ?uri where { ?x <dbp:distributor> <dbr:louis_entertainment> . ?x <dbp:starring> ?uri . ?x <rdf:type> <dbo:film> }
+select distinct ?uri where { ?uri <dbp:owner> <dbr:robert_art> . ?uri <rdf:type> <dbo:baseballteam> }
+select distinct count(?uri)where { ?x <dbo:language> <dbr:english_language> . ?uri <dbo:sourcecountry> ?x . ?uri <rdf:type> <dbo:river> }
+select distinct ?uri where { <dbr:nebraska> <dbo:predecessor> ?x . ?x <dbo:birthplace> ?uri . }
+select distinct ?uri where { <dbr:jaccow_van_hartin> <dbp:poledriver> ?uri . <dbr:jimmy_tv> <dbp:race> ?uri . }
+select distinct ?uri where { ?uri <dbp:currentmembers> <dbr:van_mexico> . }
+select distinct ?uri where { ?uri <dbo:vicepresident> <dbr:john_adams> . ?uri <rdf:type> <dbo:president> }
+select distinct ?uri where { <dbr:south_african_music> <dbp:label> ?uri . <dbr:the_boston> <dbo:parentcompany> ?uri }
+select distinct ?uri where { ?uri <dbo:restingplace> <dbr:essex> . ?uri <dbo:restingplace> <dbr:augustus> . }
+select distinct ?uri where { ?uri <dbp:currentteam> <dbr:toronto_azure> }
+select distinct ?uri where { ?uri <dbo:musiccomposer> <dbr:stanley_kubrick> . ?uri <rdf:type> <dbo:film> }
+select distinct count(?uri)where { ?uri <dbp:writer> <dbr:new_york> . ?uri <rdf:type> <dbo:writer> }
+select distinct ?uri where { <dbr:alton_ochsner> <dbo:institution> ?uri . <dbr:john_mccall> <dbo:almamater> ?uri }
+select distinct ?uri where { ?uri <dbp:location> <dbr:england> }
+ask where { <dbr:sony_records> <dbp:distributor> <dbr:charles_records> }
+select distinct count(?uri)where { ?uri <dbp:editing> <dbr:mark_stevens_( film_editor )> . ?uri <rdf:type> <dbo:film> }
+select distinct count(?uri)where { ?x <dbo:restingplace> <dbr:madison> . ?uri <dbo:author> ?x . ?uri <rdf:type> <dbo:book> }
+select distinct ?uri where { ?x <dbo:broadcastarea> <dbr:canada> . ?x <dbp:country> ?uri . ?x <rdf:type> <dbo:televisionshow> }
+select distinct count(?uri)where { ?x <dbp:party> <dbr:burbank> . ?x <dbo:religion> ?uri . }
+select distinct ?uri where { ?uri <dbp:locationcity> <dbr:ontario> . ?uri <rdf:type> <dbo:organisation> }
+select distinct ?uri where { ?x <dbo:author> <dbr:robert_berkshire> . ?x <dbp:writer> ?uri . ?x <rdf:type> <dbo:writer> }
+select distinct ?uri where { ?x <dbo:child> <dbr:william_clinton> . ?x <dbp:parent> ?uri . }
+select distinct count(?uri)where { }
+select distinct count(?uri)where { ?uri <dbo:foundationplace> <dbr:texas> . ?uri <rdf:type> <dbo:company> }
+ask where { <dbr:christina_( tv_series )> <dbp:training> <dbr:chicago> }
+select distinct ?uri where { ?uri <dbp:keypeople> <dbr:dennis_muilenburg> }
+select distinct ?uri where { ?x <dbp:designer> <dbr:defenceman> . ?x <dbp:designer> ?uri . ?x <rdf:type> <dbo:automobile> }
+select distinct ?uri where { <dbr:nina> <dbo:knownfor> ?uri . <dbr:cape_island> <dbo:knownfor> ?uri }
+select distinct ?uri where { ?uri <dbp:neighboringmunicipalities> <dbr:lancy> . ?uri <rdf:type> <dbo:settlement> }
+ask where { <dbr:joseph_wikipedia> <dbp:currentteam> <dbr:michigan_wolver> }
+select distinct count(?uri)where { ?x <dbo:languagefamily> <dbr:germany> . ?uri <dbp:language> ?x . ?uri <rdf:type> <dbo:writer> }
+select distinct ?uri where { ?x <dbo:formerpartner> <dbr:syndication> . ?x <dbo:formerpartner> ?uri . ?x <rdf:type> <dbo:figureskater> }
+select distinct count(?uri)where { ?x <dbp:position> <dbr:defenceman> . ?x <dbo:team> ?uri . }
+select distinct ?uri where { <dbr:lake_india> <dbo:state> ?uri . <dbr:lake_cave> <dbo:rivermouth> ?uri }
+select distinct ?uri where { <dbr:colonel_( film )> <dbo:ground> ?uri . <dbr:akira> <dbp:director> ?uri }
+ask where { <dbr:mauritius> <dbp:locationcity> <dbr:mauritius> }
+select distinct ?uri where { <dbr:dave_fer> <dbo:parentmountain> ?uri }
+ask where { <dbr:william_de_williams> <dbp:chairman> <dbr:william_colum> }
+select distinct ?uri where { ?x <dbp:broadcastarea> <dbr:defenceman> . ?x <dbp:broadcastarea> ?uri . ?x <rdf:type> <dbo:televisionshow> }
+select distinct ?uri where { <dbr:bmw_morton> <dbp:predecessor> ?uri }
+select distinct count(?uri)where { ?x <dbo:birthplace> <dbr:united_states> . ?uri <dbp:director> ?x . ?uri <rdf:type> <dbo:film> }
+select distinct ?uri where { ?x <dbp:editing> <dbr:iowa> . ?x <dbp:editor> ?uri . ?x <rdf:type> <dbo:film> }
+select distinct ?uri where { ?x <dbo:almamater> <dbr:tennessee> . ?x <dbo:almamater> ?uri . }
+select distinct ?uri where { ?x <dbo:commander> <dbr:francow_zachusetts> . ?x <dbp:territory> ?uri . ?x <rdf:type> <dbo:militaryconflict> }
+select distinct count(?uri)where { ?x <dbo:hometown> <dbr:lancy> . ?x <dbp:playedfor> ?uri . ?uri <rdf:type> <dbo:sportsteam> }
+select distinct count(?uri)where { ?x <dbp:nonfictionsubject> <dbr:animal> . ?x <dbo:nonfictionsubject> ?uri . }
+select distinct ?uri where { ?uri <dbp:editing> <dbr:stephen_stephen> . ?uri <rdf:type> <dbo:academicjournal> }
+select distinct ?uri where { ?x <dbo:services> <dbr:microsoft_azure> . ?x <dbp:services> ?uri . ?x <rdf:type> <dbo:company> }
+ask where { <dbr:san_island_( ?uri . }
+select distinct ?uri where { ?x <dbp:birthplace> <dbr:korea,_wisconsin> . ?uri <dbo:director> ?x . ?uri <rdf:type> <dbo:film> }
+select distinct ?uri where { ?x <dbp:youthclubs> <dbr:coloradodara_central> . ?x <dbp:state> ?uri . }
+select distinct ?uri where { ?uri <dbp:sourcelocation> <dbr:dowra> . ?uri <rdf:type> <dbo:river> }
+select distinct ?uri where { ?x <dbp:notableinstruments> <dbr:primate> . ?uri <dbo:knownfor> ?x . }
+select distinct ?uri where { <dbr:henri_berkshire> <dbo:architecturalstyle> ?uri . <dbr:shaun_korea> <dbo:architecturalstyle> ?uri . }
+select distinct count(?uri)where { ?x <dbp:guests> <dbr:james_brook> . ?x <dbp:guests> ?uri }
+select distinct ?uri where { ?uri <dbo:relative> <dbr:peter_peter_peter> . ?uri <rdf:type> <dbo:fictionalcharacter> }
+select distinct count(?uri)where { ?x <dbp:maininterests> <dbr:portnoy> . ?x <dbo:birthplace> ?uri . ?uri <rdf:type> <dbo:musicgenre> }
+select distinct ?uri where { ?x <dbo:athletics> <dbr:national_athletic_association> . ?uri <dbo:education> ?x . }
+select distinct ?uri where { <dbr:2015_kelly_( american_football )> <dbo:team> ?uri . <dbr:kevin_houston> <dbp:city> ?uri }
+select distinct ?uri where { ?uri <dbp:associatedacts> <dbr:w._ww> }
+select distinct ?uri where { <dbr:battle_chess> <dbp:genre> ?uri . <dbr:new_chess_chess> <dbo:genre> ?uri }
+select distinct ?uri where { <dbr:oahu_television> <dbp:label> ?uri . <dbr:on_christmas> <dbp:label> ?uri }
+select distinct ?uri where { <dbr:henry_evans> <dbo:occupation> ?uri . <dbr:martin_taylor> <dbp:office> ?uri }
+select distinct ?uri where { <dbr:thomas_railway_station> <dbo:district> ?uri . <dbr:danie_junction_railway_station> <dbo:deathplace> ?uri }
+select distinct ?uri where { <dbr:ford_frank> <dbo:owningcompany> ?uri . <dbr:ford_kansas> <dbp:city> ?uri }
+ask where { <dbr:ford_company> <dbo:manufacturer> <dbr:chicago> }
+select distinct count(?uri)where { ?x <dbo:battle> <dbr:battle_of_joseph> . ?x <dbo:knownfor> ?uri . ?uri <rdf:type> <dbo:scientist> }
+select distinct ?uri where { <dbr:stephen_( company )> <dbp:owner> ?uri . <dbr:commo> <dbo:parent> ?uri }
+ask where { <dbr:ford_sea> <dbo:maininterests> <dbr:davies> }
+select distinct ?uri where { <dbr:kumta> <dbo:border> ?uri . <dbr:korea_group> <dbo:nationality> ?uri }
+select distinct ?uri where { <dbr:charles_davies> <dbo:maintainedby> ?uri . <dbr:davies> <dbo:occupation> ?uri }
+select distinct ?uri where { <dbr:joseph_riley> <dbp:headquarters> ?uri }
+select distinct ?uri where { <dbr:seattle_seattle_north_building> <dbp:managerclub> ?uri }
+select distinct count(?uri)where { ?x <dbo:location> <dbr:america> . ?uri <dbp:distributor> ?x . ?uri <rdf:type> <dbo:videogame> }
+select distinct ?uri where { ?uri <dbp:starring> <dbr:nasa_( tv_series )> . ?uri <dbo:starring> <dbr:islam> . ?uri <rdf:type> <dbo:person> }
+select distinct ?uri where { ?x <dbo:operator> <dbr:massachusetts_department> . ?x <dbp:owner> ?uri . ?x <rdf:type> <dbo:organisation> }
+select distinct ?uri where { ?uri <dbo:related> <dbr:kelly_osbourne> . }
+select distinct ?uri where { ?uri <dbo:presenter> <dbr:ryan_seacrest> . ?uri <rdf:type> <dbo:televisionshow> }
+select distinct ?uri where { ?x <dbo:formerbandmember> <dbr:josh_beman> . ?uri <dbp:thememusiccomposer> ?x . ?uri <rdf:type> <dbo:televisionshow> }
+select distinct ?uri where { ?x <dbo:foundedby> <dbr:david_scherman> . ?x <dbp:founder> ?uri . ?x <rdf:type> <dbo:book> }
+select distinct ?uri where { ?x <dbp:affiliations> <dbr:christopher_v8> . ?x <dbp:affiliation> ?uri . ?x <rdf:type> <dbo:soccerclub> }
+select distinct ?uri where { ?uri <dbo:relative> <dbr:clan_mcduck> . ?uri <dbo:relative> <dbr:lyons_vonne> . ?uri <rdf:type> <dbo:fictionalcharacter> }
+select distinct ?uri where { ?x <dbo:nearestcity> <dbr:olifornia> . ?x <dbp:nearestcity> ?uri . }
+select distinct ?uri where { <dbr:john_madison> <dbo:appointer> ?uri . <dbr:william_clark> <dbp:appointer> ?uri . }
+select distinct ?uri where { ?x <dbo:associatedband> <dbr:larry_luis> . ?uri <dbp:thememusiccomposer> ?x . ?uri <rdf:type> <dbo:televisionshow> }
+select distinct ?uri where { ?uri <dbp:screenplay> <dbr:akiva_goldsman> . ?uri <dbo:director> <dbr:joel_schumacher> . ?uri <rdf:type> <dbo:film> }
+select distinct ?uri where { ?x <dbo:network> <dbr:nbc> . ?x <dbp:presenter> ?uri . ?x <rdf:type> <dbo:televisionshow> }
+select distinct ?uri where { <dbr:arlington_wine_wine> <dbo:residence> ?uri }
+select distinct ?uri where { ?uri <dbp:writer> <dbr:karakuri_doji_ultimo> . ?uri <dbp:narrated> <dbr:hiraig_holmes> . }
+select distinct ?uri where { <dbr:king_county,_washington> <dbo:countyseat> ?uri }
+select distinct ?uri where { <dbr:ford_y - block_engine> <dbo:manufacturer> ?uri }
+select distinct ?uri where { ?x <dbo:keyperson> <dbr:steve_burke_( entrepreneur )> . ?uri <dbp:network> ?x . ?uri <rdf:type> <dbo:broadcastnetwork> }
+select distinct ?uri where { ?uri <dbo:predecessor> <dbr:victor_israel> . ?uri <dbp:allegiance> <dbr:london> . ?uri <rdf:type> <dbo:country> }
+select distinct ?uri where { ?uri <dbo:foundedby> <dbr:philosophy> }
+select distinct ?uri where { ?x <dbo:league> <dbr:rock> . ?x <dbp:purpose> ?uri . ?x <rdf:type> <dbo:organisation> }
+select distinct ?uri where { <dbr:peter_stokes> <dbo:owner> ?x . ?x <dbp:owner> ?uri . ?x <rdf:type> <dbo:bank> }
+select distinct ?uri where { ?x <dbo:relative> <dbr:anne_scott> . ?uri <dbo:relative> ?x . }
+select distinct ?uri where { <dbr:bruce_bruce> <dbo:team> ?uri . <dbr:buddhism> <dbo:team> ?uri . }
+select distinct ?uri where { ?x <dbo:channel> <dbr:california> . ?x <dbp:producer> ?uri . ?x <rdf:type> <dbo:televisionshow> }
+select distinct ?uri where { <dbr:vadodara_junction_railway_station> <dbp:line> ?uri . <dbr:saraham_houston> <dbo:hubs> ?uri }
+ask where { <dbr:robert_asne> <dbo:instrument> <dbr:robertini> }
+select distinct ?uri where { <dbr:henri,_rohnry_( politician )> <dbo:restingplace> ?uri . <dbr:franz_british> <dbo:birthplace> ?uri }
+select distinct ?uri where { <dbr:jimmy_wales> <dbo:university> ?uri . <dbr:wikipedia> <dbo:university> ?uri . }
+select distinct ?uri where { ?x <dbp:trainer> <dbr:wisconsin> . ?uri <dbp:training> ?x . ?uri <rdf:type> <dbo:artist> }
+select distinct ?uri where { <dbr:american_sea> <dbo:outflow> ?x . ?x <dbp:cities> ?uri . ?x <rdf:type> <dbo:sea> }
+select distinct ?uri where { ?uri <dbo:cinematography> <dbr:gregg_toland> . ?uri <rdf:type> <dbo:film> }
+select distinct ?uri where { ?x <dbp:leadername> <dbr:ronalv> . ?x <dbp:party> ?uri . }
+select distinct count(?uri)where { ?x <dbo:locationcity> <dbr:united_states> . ?x <dbp:products> ?uri . }
+select distinct ?uri where { ?x <dbp:nearestcity> <dbr:australian_virginia> . ?uri <dbo:restingplace> ?x . ?uri <rdf:type> <dbo:officeholder> }
+select distinct ?uri where { <dbr:gold_national_football_team> <dbp:location> ?uri }
+select distinct ?uri where { ?x <dbo:deathplace> <dbr:roman_charles> . ?x <dbo:deathplace> ?uri . ?x <rdf:type> <dbo:officeholder> }
+select distinct count(?uri)where { ?uri <dbo:headquarter> <dbr:daniel> . ?uri <rdf:type> <dbo:person> }
+select distinct ?uri where { ?uri <dbp:purpose> <dbr:environmentalism> . ?uri <dbp:purpose> <dbr:environmentalism> . }
+ask where { <dbr:colorado> <dbp:mouthlocation> <dbr:colorado> }
+select distinct count(?uri)where { ?uri <dbp:foundation> <dbr:dallas> . ?uri <rdf:type> <dbo:company> }
+select distinct ?uri where { <dbr:the_producers_( tv_song )> <dbp:thememusiccommanders> ?uri . <dbr:a - chicago_( musical )> <dbo:musicby> ?uri }
+select distinct ?uri where { ?x <dbo:automobileplatform> <dbr:front - engine> . ?x <dbo:automobileplatform> ?uri . ?x <rdf:type> <dbo:automobile> }
+select distinct ?uri where { <dbr:marcus_dalek> <dbo:operator> ?x . ?x <dbp:currency> ?uri . ?x <rdf:type> <dbo:country> }
+select distinct ?uri where { <dbr:u._languages> <dbo:state> ?uri . <dbr:k._kelly_kelly> <dbo:state> ?uri }
+select distinct ?uri where { ?uri <dbp:mouthlocation> <dbr:arlington_ocean> . ?uri <dbo:rivermouth> <dbr:ocean> . }
+select distinct ?uri where { ?uri <dbo:relative> <dbr:mumbai_barrancisco> . ?uri <dbo:relative> <dbr:henry_barry_barry> . }
+select distinct ?uri where { <dbr:kim_sawchuk> <dbp:region> ?uri }
+select distinct ?uri where { ?x <dbp:successor> <dbr:mauritius_bank> . ?x <dbp:location> ?uri . ?x <rdf:type> <dbo:bank> }
+select distinct ?uri where { ?uri <dbp:mouthlocation> <dbr:reading,_berkshire> . ?uri <dbo:mouthplace> <dbr:essex> . ?uri <rdf:type> <dbo:river> }
+select distinct ?uri where { ?x <dbp:president> <dbr:united_states_house_of_representatives> . ?x <dbo:president> ?uri . }
+select distinct count(?uri)where { ?x <dbo:tenant> <dbr:toronto_malay> . ?x <dbp:tenant> ?uri }
+select distinct ?uri where { <dbr:bbc_multimedia> <dbo:product> ?uri . <dbr:the_producers_( drink )> <dbo:product> ?uri }
+select distinct ?uri where { <dbr:victor_changinka> <dbp:birthplace> ?uri . <dbr:linda_gandhi> <dbp:birthplace> ?uri }
+select distinct ?uri where { <dbr:denver_bank> <dbo:locationcity> ?uri . <dbr:bron_clark> <dbo:locationcity> ?uri }
+select distinct count(?uri)where { ?x <dbo:tenant> <dbr:toronto_fran> . ?x <dbo:tenant> ?uri }
+select distinct ?uri where { ?x <dbo:rivermouth> <dbr:lake_river> . ?x <dbp:location> ?uri . ?x <rdf:type> <dbo:river> }
+select distinct ?uri where { ?x <dbo:spouse> <dbr:henry_texas> . ?x <dbo:relation> ?uri . }
+select distinct ?uri where { ?x <dbp:city> <dbr:pixar> . ?x <dbo:owner> ?uri . ?x <rdf:type> <dbo:airport> }
+select distinct ?uri where { <dbr:ford_air_service> <dbo:parentcompany> ?uri }
+select distinct ?uri where { ?x <dbo:hubairport> <dbr:santa_airport> . ?uri <dbp:hubs> ?x . ?uri <rdf:type> <dbo:airline> }
+select distinct ?uri where { ?uri <dbp:neighboringmunicipalities> <dbr:cologny> }
+select distinct ?uri where { ?x <dbp:manager> <dbr:california> . ?x <dbp:manager> ?uri . ?x <rdf:type> <dbo:soccerclub> }
+select distinct ?uri where { <dbr:brad_paisley_discography> <dbp:artist> ?uri . <dbr:simon> <dbp:artist> ?uri }
+ask where { <dbr:the_americans> <dbp:coverartist> <dbr:marshall> }
+select distinct ?uri where { ?x <dbp:relative> <dbr:siberra> . ?x <dbo:religion> ?uri . }
+select distinct count(?uri)where { ?uri <dbo:knownfor> <dbr:andrew_jackson> . ?uri <dbo:commander> <dbr:jackson> }
+ask where { <dbr:henry_general> <dbp:notablecommander> <dbr:henry_general> }
+select distinct ?uri where { <dbr:abc_roston> <dbp:party> ?uri . <dbr:shael_bak> <dbo:party> ?uri . }
+select distinct ?uri where { ?x <dbp:lieutenant> <dbr:richard_winn> . ?x <dbp:appointer> ?uri . ?x <rdf:type> <dbo:governor> }
+select distinct ?uri where { <dbr:rene_deweth> <dbp:builder> ?uri }
+select distinct ?uri where { ?uri <dbo:founder> <dbr:colorado_athletic_association> }
+select distinct ?uri where { <dbr:panthera_g. c._season> <dbo:stadium> ?uri . <dbr:simon_season> <dbp:stadium> ?uri . }
+select distinct ?uri where { ?x <dbo:related> <dbr:vehicle> . ?x <dbo:developer> ?uri . ?x <rdf:type> <dbo:videogame> }
+select distinct ?uri where { ?uri <dbp:capital> <dbr:onedrive> . ?uri <dbp:outflow> <dbr:new_mexia> . }
+select distinct ?uri where { ?uri <dbp:coach> <dbr:bill_peters> . ?uri <rdf:type> <dbo:hockeyteam> }
+select distinct ?uri where { ?x <dbo:parentmountainpeak> <dbr:sony> . ?x <dbo:parent> ?uri . ?x <rdf:type> <dbo:bank> }
+select distinct ?uri where { ?x <dbo:launchsite> <dbr:cape_cape_canaveral_air_force_station> . ?x <dbo:launchsite> ?uri . ?x <rdf:type> <dbo:launchsite> }
+select distinct ?uri where { ?uri <dbp:presenter> <dbr:london> . ?uri <dbp:presenter> <dbr:brian_dunkleman> . ?uri <rdf:type> <dbo:televisionshow> }
+select distinct ?uri where { <dbr:south_bell> <dbo:municipality> ?uri }
+select distinct ?uri where { <dbr:thomas_johansson_francois> <dbo:restingplace> ?uri . <dbr:gloucestershire> <dbo:restingplace> ?uri }
+select distinct ?uri where { ?uri <dbo:network> <dbr:channel_broadcasting_company> . ?uri <rdf:type> <dbo:televisionshow> }
+select distinct ?uri where { ?x <dbo:executiveproducer> <dbr:mauritius> . ?x <dbp:author> ?uri . ?x <rdf:type> <dbo:writer> }
+select distinct ?uri where { ?uri <dbo:occupation> <dbr:daniel> . ?uri <rdf:type> <dbo:film> }
+select distinct ?uri where { ?x <dbp:currentmembers> <dbr:davies> . ?uri <dbo:team> ?x . ?uri <rdf:type> <dbo:americanfootballplayer> }
+select distinct count(?uri)where { <dbr:union_of_virginia> <dbp:affiliations> ?uri . }
+select distinct ?uri where { <dbr:thomas_boston> <dbo:birthplace> ?uri }
+select distinct count(?uri)where { ?uri <dbo:nationality> <dbr:country> . }
+select distinct ?uri where { <dbr:from_the_vehicle> <dbp:starring> ?x . ?x <dbo:child> ?uri . ?x <rdf:type> <dbo:person> }
+select distinct count(?uri)where { ?x <dbo:computingplatform> <dbr:lewis> . ?x <dbo:series> ?uri . }
+select distinct count(?uri)where { ?x <dbo:president> <dbr:carolina_de_germany> . ?x <dbo:sport> ?uri . }
+select distinct ?uri where { <dbr:buckhurst_hill_county_high_school> <dbo:localauthority> ?uri . <dbr:elizabeth_raju_high_school> <dbo:localauthority> ?uri }
+select distinct ?uri where { <dbr:palang_moroz> <dbo:hometown> ?uri . <dbr:new_york_city> <dbo:deathplace> ?uri }
+ask where { <dbr:united_states_air_force_academy> <dbo:discoverer> <dbr:united_states_force_academy> }
+ask where { <dbr:the_vehicle_( tv_series )> <dbo:institution> <dbr:texas> }
+select distinct count(?uri)where { ?x <dbo:related> <dbr:v8_engine> . ?x <dbp:related> ?uri . ?uri <rdf:type> <dbo:automobile> }
+select distinct ?uri where { <dbr:korean_academy> <dbo:species> ?uri . <dbr:the_fox_academy> <dbo:species> ?uri }
+select distinct ?uri where { ?uri <dbp:birthplace> <dbr:ontario> . ?uri <rdf:type> <dbo:athlete> }
+select distinct ?uri where { ?uri <dbo:birthplace> <dbr:pennsas_university> . ?uri <dbo:almamater> <dbr:clark_university> . ?uri <rdf:type> <dbo:person> }
+select distinct ?uri where { ?uri <dbp:purpose> <dbr:philosophy> }
+select distinct count(?uri)where { ?x <dbp:religion> <dbr:marshall> . ?x <dbo:religion> ?uri . }
+select distinct count(?uri)where { ?x <dbp:sisterstations> <dbr:bbc> . ?uri <dbo:network> ?x . ?uri <rdf:type> <dbo:televisionshow> }
+select distinct count(?uri)where { ?x <dbp:league> <dbr:clinton_league> . ?x <dbo:formerteam> ?uri . ?uri <rdf:type> <dbo:sportsteam> }
+select distinct ?uri where { ?uri <dbp:constituency> <dbr:noe_valley,_san_francisco> . ?uri <dbo:militaryunit> <dbr:francisco_( asr - 13 )> . ?uri <rdf:type> <dbo:officeholder> }
+select distinct ?uri where { ?x <dbo:birthplace> <dbr:england> . ?uri <dbo:voices> ?x . ?uri <rdf:type> <dbo:televisionshow> }
+select distinct ?uri where { ?x <dbp:genre> <dbr:canada> . ?x <dbo:writer> ?uri . ?x <rdf:type> <dbo:single> }
+select distinct ?uri where { <dbr:martin_molony> <dbo:race> ?uri }
+select distinct ?uri where { <dbr:thailand> <dbp:successor> ?x . ?x <dbp:appointer> ?uri . }
+select distinct ?uri where { ?uri <dbo:publisher> <dbr:joseph_wales> . ?uri <rdf:type> <dbo:magazine> }
+select distinct ?uri where { <dbr:united_states_election,_the_pradesh> <dbp:affiliation> ?uri . <dbr:general_election_election,_2004> <dbo:party> ?uri . }
+select distinct ?uri where { ?uri <dbo:species> <dbr:american_philippines> . ?uri <dbo:relative> <dbr:linda_madison> . ?uri <rdf:type> <dbo:fictionalcharacter> }
+select distinct ?uri where { ?uri <dbo:sourcecountry> <dbr:zambia> . ?uri <dbp:sourceregion> <dbr:north - western_province,_zambia> . ?uri <rdf:type> <dbo:river> }
+select distinct ?uri where { ?uri <dbp:order> <dbr:laurie_david> . ?uri <dbo:birthplace> <dbr:united_states_park> . ?uri <rdf:type> <dbo:place> }
+select distinct count(?uri)where { ?x <dbo:battle> <dbr:franciscois_reia> . ?x <dbp:battles> ?uri . ?uri <rdf:type> <dbo:militaryconflict> }
+select distinct ?uri where { <dbr:santa_marve> <dbo:sourcecountry> ?x . ?x <dbo:largestcity> ?uri . ?x <rdf:type> <dbo:country> }
+select distinct ?uri where { ?uri <dbp:thememusiccomposer> <dbr:joel_( band )> . ?uri <rdf:type> <dbo:televisionshow> }
+select distinct ?uri where { ?x <dbo:associatedband> <dbr:playstation_( band )> . ?x <dbo:bandmember> ?uri . }
+select distinct ?uri where { <dbr:middlesbrough_f. c.> <dbp:managerclub> ?uri }
+select distinct ?uri where { <dbr:david_brown_house> <dbp:nearestcity> ?uri }
+select distinct ?uri where { ?uri <dbo:nationality> <dbr:state_state> . ?uri <rdf:type> <dbo:scientist> }
+select distinct ?uri where { ?x <dbo:associatedband> <dbr:the_colonel_( band )> . ?uri <dbo:musiccomposer> ?x . ?uri <rdf:type> <dbo:film> }
+select distinct count(?uri)where { ?uri <dbo:school> <dbr:skeleton_school> . ?uri <rdf:type> <dbo:school> }
+select distinct ?uri where { ?x <dbo:militaryunit> <dbr:onedrive> . ?x <dbo:restingplace> ?uri . }
+select distinct ?uri where { <dbr:itv_( microsoft_language )> <dbo:officiallanguage> ?uri . <dbr:neretva> <dbo:officiallanguage> ?uri . }
+select distinct ?uri where { ?x <dbo:battle> <dbr:luis_texas> . ?x <dbo:territory> ?uri . }
+select distinct ?uri where { <dbr:albert_hargman> <dbp:battles> ?uri }
+select distinct count(?uri)where { ?x <dbo:deathplace> <dbr:florida> . ?x <dbp:occupation> ?uri }
+select distinct ?uri where { <dbr:saint_petersburg> <dbo:routeend> ?uri }
+select distinct ?uri where { <dbr:david_defenceman> <dbo:notablework> ?uri }
+ask where { <dbr:hyundai_williams> <dbp:pastmembers> <dbr:islam> . ?uri <dbp:music> <dbr:william_( band )> }
+ask where { <dbr:peter_smith> <dbp:currentclub> <dbr:peter_city_fc> }
+select distinct ?uri where { <dbr:indian_general_election,_ox> <dbp:affiliation> ?uri }
+select distinct ?uri where { <dbr:c +> <dbp:broadcastarea> ?uri . <dbr:anthony_conner> <dbo:birthplace> ?uri }
+select distinct count(?uri)where { ?x <dbp:canonizedby> <dbr:john_paul_ii> . ?x <dbo:deathplace> ?uri . }
+select distinct ?uri where { ?uri <dbo:education> <dbr:j._marshall> . ?uri <rdf:type> <dbo:university> }
+select distinct count(?uri)where { ?x <dbo:locationcity> <dbr:pacific_ocean> . ?x <dbo:region> ?uri . }
+select distinct ?uri where { ?x <dbp:doctoralstudents> <dbr:john_basic> . ?uri <dbo:doctoralstudents> ?x . ?uri <rdf:type> <dbo:scientist> }
+select distinct ?uri where { ?uri <dbp:label> <dbr:tony_records> . ?uri <rdf:type> <dbo:musicalartist> }
+select distinct ?uri where { <dbr:bobby_berkshire> <dbo:region> ?uri }
+select distinct ?uri where { ?x <dbo:computingplatform> <dbr:linda_louis> . ?x <dbo:religion> ?uri . ?x <rdf:type> <dbo:organisation> }
+select distinct ?uri where { <dbr:korea_creek> <dbo:capital> ?uri }
+select distinct ?uri where { <dbr:edwin_grand_prix> <dbp:firstteam> ?uri . <dbr:edwin_grand_prix> <dbp:parent> ?uri }
+select distinct ?uri where { <dbr:gold_gold_of_gold> <dbp:trainer> ?uri }
+select distinct ?uri where { ?uri <dbp:constituency> <dbr:harry_san_francisco> . ?uri <rdf:type> <dbo:officeholder> }
+select distinct ?uri where { ?x <dbp:sisterstations> <dbr:like> . ?x <dbo:founded> ?uri . }
+select distinct count(?uri)where { ?uri <dbp:employer> <dbr:eliza_iii> . }
+select distinct ?uri where { ?x <dbp:manager> <dbr:luis_england> . ?uri <dbp:youthclubs> ?x . ?uri <rdf:type> <dbo:person> }
+ask where { <dbr:mount_lee> <dbp:creators> <dbr:stan_lee> }
+select distinct ?uri where { <dbr:conlod> <dbp:draftteam> ?uri }
+select distinct ?uri where { ?x <dbp:judges> <dbr:lrasier> . ?x <dbp:judges> ?uri . ?x <rdf:type> <dbo:televisionshow> }
+select distinct ?uri where { ?x <dbp:design> <dbr:ontario> . ?x <dbp:crosses> ?uri . ?x <rdf:type> <dbo:river> }
+select distinct ?uri where { ?uri <dbo:commander> <dbr:colin_powell> . ?uri <dbo:commander> <dbr:islam> . ?uri <rdf:type> <dbo:militaryconflict> }
+select distinct ?uri where { ?uri <dbo:almamater> <dbr:harvard - westlake_school> . ?uri <dbp:restingplace> <dbr:alta_mesa_park> . ?uri <rdf:type> <dbo:officeholder> }
+select distinct ?uri where { ?x <dbp:writer> <dbr:harry_connick,_jr> . ?x <dbo:recordlabel> ?uri . ?x <rdf:type> <dbo:musicalartist> }
+select distinct ?uri where { <dbr:jon_speelman> <dbp:college> ?uri }
+select distinct ?uri where { <dbr:harry_hargman> <dbo:almamater> ?uri . <dbr:richard_colin> <dbo:almamater> ?uri }
+select distinct count(?uri)where { ?x <dbo:battle> <dbr:battle_of_france> . ?x <dbo:award> ?uri . ?uri <rdf:type> <dbo:award> }
+select distinct ?uri where { ?uri <dbp:youthclubs> <dbr:new_islands> . ?uri <rdf:type> <dbo:americanfootballplayer> }
+ask where { <dbr:nokia> <dbo:ingredient> <dbr:canada> }
+select distinct count(?uri)where { ?x <dbp:writer> <dbr:square> . ?x <dbp:writer> ?uri . }
+select distinct ?uri where { ?uri <dbp:currentteam> <dbr:massachusetts_islands> . ?uri <dbp:currentteam> <dbr:massachusetts_islands> . }
+select distinct ?uri where { ?uri <dbo:hubairport> <dbr:san_francisco_international_airport> . ?uri <rdf:type> <dbo:airline> }
+select distinct ?uri where { ?x <dbp:designer> <dbr:brazil> . ?x <dbo:occupation> ?uri . ?x <rdf:type> <dbo:artist> }
+select distinct ?uri where { <dbr:jamiatu_muslim_mindanao> <dbp:athletics> ?uri }
+select distinct ?uri where { <dbr:merritt_paulson> <dbo:chairman> ?x . ?x <dbo:region> ?uri . }
+select distinct ?uri where { ?uri <dbo:executiveproducer> <dbr:steven_peter> . ?uri <rdf:type> <dbo:televisionshow> }
+select distinct ?uri where { <dbr:ingmar_bergman> <dbo:award> ?uri . <dbr:charles_lemaire> <dbo:award> ?uri }
+select distinct ?uri where { ?uri <dbo:author> <dbr:arlington_house> . ?uri <dbp:writer> <dbr:azure> . }
+select distinct ?uri where { <dbr:daniel_bay> <dbp:state> ?uri . <dbr:joseph_bay> <dbo:state> ?uri . }
+select distinct ?uri where { ?x <dbo:sourcecountry> <dbr:zambia> . ?x <dbo:rivermouth> ?uri . ?x <rdf:type> <dbo:river> }
+select distinct ?uri where { ?x <dbo:birthplace> <dbr:saint - louis - charles> . ?x <dbo:birthplace> ?uri . }
+select distinct ?uri where { ?uri <dbo:commander> <dbr:john_egypt> . ?uri <dbo:commander> <dbr:john_munn> . }
+select distinct ?uri where { ?uri <dbo:producer> <dbr:erik_bork> . ?uri <rdf:type> <dbo:televisionshow> }
+select distinct count(?uri)where { ?uri <dbp:characters> <dbr:office_( comics )> . }
+select distinct ?uri where { <dbr:kumta> <dbo:club> ?uri }
+select distinct ?uri where { ?uri <dbo:producer> <dbr:gami> . ?uri <dbo:producer> <dbr:les_charles> . ?uri <rdf:type> <dbo:televisionshow> }
+select distinct ?uri where { <dbr:uditer_raju> <dbp:affiliations> ?uri . <dbr:wikipedia> <dbp:affiliation> ?uri . }
+select distinct ?uri where { ?x <dbp:athletics> <dbr:private_university> . ?x <dbo:sport> ?uri . }
+select distinct ?uri where { ?uri <dbp:neighboringmunicipalities> <dbr:kelly> . ?uri <dbp:outflow> <dbr:davies> . ?uri <rdf:type> <dbo:sea> }
+select distinct count(?uri)where { <dbr:arlington_bay> <dbo:cities> ?x . ?x <dbp:cities> ?uri . ?x <rdf:type> <dbo:sea> }
+select distinct ?uri where { <dbr:araband> <dbp:nationality> ?uri }
+select distinct ?uri where { ?x <dbo:deathplace> <dbr:stoke_hospital> . ?x <dbo:almamater> ?uri . }
+select distinct count(?uri)where { ?x <dbp:homestadium> <dbr:liga_national_stadium> . ?x <dbo:homestadium> ?uri . }
+select distinct ?uri where { <dbr:lumta> <dbo:region> ?uri }
+select distinct ?uri where { ?x <dbo:lefttributary> <dbr:bucciu> . ?x <dbo:rivermouth> ?uri . }
+select distinct ?uri where { <dbr:sony> <dbo:territory> ?uri }
+select distinct ?uri where { ?x <dbp:label> <dbr:cell_records> . ?uri <dbo:starring> ?x . }
+select distinct ?uri where { ?uri <dbo:leader> <dbr:edwin_catmull> . ?uri <rdf:type> <dbo:company> }
+ask where { <dbr:nova_international_airport> <dbp:international> <dbr:tim_international_airport> }
+ask where { <dbr:stanley_fran> <dbo:institution> <dbr:stanley_buddhism> }
+select distinct ?uri where { ?uri <dbp:writer> <dbr:monty_python> . ?uri <rdf:type> <dbo:film> }
+select distinct count(?uri)where { <dbr:thomas_thailand> <dbo:nonfictionsubject> ?uri . }
+select distinct ?uri where { ?x <dbo:routestart> <dbr:moscow_station> . ?x <dbo:routestart> ?uri . ?x <rdf:type> <dbo:railwayline> }
+select distinct count(?uri)where { ?x <dbo:computingplatform> <dbr:davies> . ?x <dbo:residence> ?uri . ?uri <rdf:type> <dbo:place> }
+select distinct ?uri where { <dbr:peter_stokes> <dbp:starring> ?uri }
+ask where { <dbr:the_europe_( tv_series )> <dbp:narrated> <dbr:stan_lee> }
+select distinct ?uri where { ?x <dbo:location> <dbr:on_washington> . ?x <dbp:cities> ?uri . }
+select distinct ?uri where { ?uri <dbo:location> <dbr:europe> . ?uri <dbp:cities> <dbr:europe> . ?uri <rdf:type> <dbo:sea> }
+select distinct ?uri where { ?x <dbp:guests> <dbr:germany> . ?x <dbp:series> ?uri . ?x <rdf:type> <dbo:book> }
+select distinct ?uri where { ?x <dbo:rivermouth> <dbr:bennett_river> . ?x <dbp:outflow> ?uri . }
+select distinct count(?uri)where { ?x <dbp:training> <dbr:wisconsin> . ?x <dbp:training> ?uri . ?uri <rdf:type> <dbo:person> }
+select distinct ?uri where { ?x <dbp:president> <dbr:san_japan> . ?x <dbp:president> ?uri . ?x <rdf:type> <dbo:school> }
+select distinct ?uri where { <dbr:microsoft_america> <dbp:parent> ?x . ?x <dbo:locationcity> ?uri . }
+select distinct ?uri where { ?x <dbp:religiousaffiliation> <dbr:taguig> . ?x <dbo:sport> ?uri . }
+select distinct ?uri where { <dbr:monroe_charles> <dbo:birthplace> ?uri . <dbr:joseph_california> <dbo:birthplace> ?uri }
+select distinct count(?uri)where { ?x <dbp:neighboringmunicipalities> <dbr:teddy_riley> . ?x <dbo:award> ?uri . }
+select distinct ?uri where { ?x <dbp:area> <dbr:wbc> . ?x <dbo:formerbroadvisor> ?uri . ?x <rdf:type> <dbo:televisionshow> }
+select distinct ?uri where { ?uri <dbo:deathplace> <dbr:emi> . ?uri <rdf:type> <dbo:place> }
+select distinct ?uri where { ?x <dbo:occupation> <dbr:rock_of_rock> . ?uri <dbo:publisher> ?x . ?uri <rdf:type> <dbo:magazine> }
+select distinct ?uri where { ?uri <dbo:automobileplatform> <dbr:kazan> . ?uri <rdf:type> <dbo:automobile> }
+select distinct ?uri where { ?uri <dbp:keypeople> <dbr:dennis_muilenburg> . ?uri <dbp:products> <dbr:boeing_boeing_ch - 18e> . ?uri <rdf:type> <dbo:company> }
+select distinct ?uri where { <dbr:pulau_ubin> <dbo:capital> ?uri . <dbr:luis_louis> <dbo:restingplace> ?uri }
+select distinct ?uri where { ?x <dbp:deathcause> <dbr:taylor,_f.> . ?x <dbo:deathplace> ?uri . ?x <rdf:type> <dbo:person> }
+select distinct ?uri where { <dbr:mastercard_music> <dbp:currentmembers> ?uri . <dbr:kovacs> <dbo:associatedmusicalartist> ?uri }
+select distinct ?uri where { <dbr:batman :_batman> <dbp:characters> ?uri }
+select distinct ?uri where { <dbr:2009_egypt> <dbp:producer> ?uri }
+select distinct count(?uri)where { ?x <dbp:coach> <dbr:kelly_kelly> . ?uri <dbo:debutteam> ?x . }
+select distinct ?uri where { <dbr:edwin_of_tom> <dbo:subsequentwork> ?x . ?x <dbo:subject> ?uri . }
+select distinct ?uri where { ?x <dbo:school> <dbr:jeffera> . ?x <dbp:nickname> ?uri . ?x <rdf:type> <dbo:school> }
+select distinct ?uri where { ?uri <dbo:discoverer> <dbr:john_germany> . ?uri <dbo:discoverer> <dbr:lema_vener> . ?uri <rdf:type> <dbo:scientist> }
+select distinct ?uri where { ?uri <dbp:mouthlocation> <dbr:colorado> . ?uri <rdf:type> <dbo:river> }
+select distinct ?uri where { <dbr:jack_mcgregor> <dbo:education> ?uri . <dbr:donald_barcelona> <dbo:almamater> ?uri }
+select distinct count(?uri)where { ?x <dbp:headquarters> <dbr:berlin> . ?x <dbo:leader> ?uri . }
+select distinct ?uri where { <dbr:indian_bank> <dbp:address> ?uri }
+select distinct ?uri where { <dbr:fergueg> <dbp:race> ?uri }
+select distinct ?uri where { <dbr:steve_suspense> <dbp:battles> ?uri }
+ask where { <dbr:hudson_gibson> <dbo:notablework> <dbr:sony> }
+select distinct count(?uri)where { ?uri <dbo:order> <dbr:bacillales> . ?uri <dbp:domain> <dbr:bacteria> . ?uri <rdf:type> <dbo:bacteria> }
+select distinct ?uri where { <dbr:christopher_davids> <dbp:residence> ?uri . <dbr:dan_tv> <dbo:residence> ?uri . }
+ask where { <dbr:john_emne> <dbp:creators> <dbr:emee> }
+select distinct ?uri where { ?x <dbp:battles> <dbr:tai_mississippi> . ?x <dbp:battles> ?uri . ?x <rdf:type> <dbo:militaryconflict> }
+select distinct ?uri where { ?x <dbp:mainingredient> <dbr:people> . ?x <dbo:award> ?uri . }
+select distinct ?uri where { <dbr:hogan_scott> <dbp:residence> ?uri . <dbr:holmes_scott> <dbo:residence> ?uri }
+select distinct ?uri where { ?uri <dbp:presenter> <dbr:onedrive> . ?uri <dbo:award> <dbr:swedish_academy> . ?uri <rdf:type> <dbo:award> }
+select distinct ?uri where { ?uri <dbo:keyperson> <dbr:raymond_conner> . ?uri <rdf:type> <dbo:company> }
+select distinct ?uri where { <dbr:eristoff> <dbo:manufacturer> ?uri }
+ask where { <dbr:chicago_university> <dbp:institution> <dbr:chicago> }
+select distinct ?uri where { ?x <dbo:birthplace> <dbr:ibo> . ?x <dbo:occupation> ?uri . ?x <rdf:type> <dbo:person> }
+select distinct ?uri where { <dbr:otani_region> <dbo:capital> ?x . ?x <dbo:state> ?uri . }
+select distinct ?uri where { ?uri <dbp:veneratedin> <dbr:korea_district> . ?uri <dbo:religion> <dbr:korea_district> . }
+select distinct ?uri where { <dbr:neungin_high_school> <dbp:college> ?uri . <dbr:neungin_high_school> <dbo:religion> ?uri . }
+select distinct ?uri where { <dbr:uditer_war> <dbo:tenant> ?uri }
+select distinct count(?uri)where { ?x <dbp:battles> <dbr:lewis> . ?x <dbp:battles> ?uri }
+select distinct ?uri where { ?uri <dbp:album> <dbr:harvard_american> }
+select distinct ?uri where { <dbr:tar_bergman> <dbo:successor> ?x . ?x <dbp:state> ?uri . ?x <rdf:type> <dbo:person> }
+select distinct ?uri where { <dbr:edwin_air_force_andrews> <dbp:builder> ?uri . <dbr:elizabeth_airways> <dbo:birthplace> ?uri }
+select distinct ?uri where { <dbr:shaun_goak> <dbo:largestcity> ?uri . <dbr:european_state> <dbo:birthplace> ?uri }
+select distinct ?uri where { ?uri <dbp:producer> <dbr:stephen_e._ambrose> . ?uri <dbo:producer> <dbr:jendresen> . ?uri <rdf:type> <dbo:televisionshow> }
+select distinct ?uri where { <dbr:robert_michelle> <dbo:birthplace> ?uri }
+ask where { <dbr:geneva> <dbo:mayor> <dbr:geneva> }
+select distinct count(?uri)where { ?x <dbo:party> <dbr:janata_party_( party )> . ?x <dbo:party> ?uri }
+select distinct ?uri where { ?x <dbp:owner> <dbr:warner_bros._television> . ?uri <dbp:network> ?x . ?uri <rdf:type> <dbo:televisionshow> }
+select distinct ?uri where { <dbr:samuel_k._islam> <dbo:region> ?uri }
+select distinct ?uri where { ?x <dbp:allegiance> <dbr:james_state_of_james> . ?uri <dbp:allegiance> ?x . ?uri <rdf:type> <dbo:officeholder> }
+select distinct ?uri where { ?uri <dbp:spouse> <dbr:cleopatra_of_egypt> . ?uri <dbo:parent> <dbr:ptolemy_xiv_of_egypt> . ?uri <rdf:type> <dbo:royalty> }
+select distinct ?uri where { ?x <dbp:owner> <dbr:carl_carl> . ?x <dbp:owner> ?uri . ?x <rdf:type> <dbo:soccerclub> }
+select distinct ?uri where { ?x <dbo:foundationplace> <dbr:united_states> . ?uri <dbo:foundationplace> ?x . ?uri <rdf:type> <dbo:company> }
+select distinct count(?uri)where { ?x <dbo:keyperson> <dbr:carolina_de_germany> . ?x <dbo:sport> ?uri . }
+select distinct ?uri where { ?x <dbo:recordlabel> <dbr:atlanta> . ?uri <dbp:label> ?x . ?uri <rdf:type> <dbo:musicalartist> }
+select distinct ?uri where { ?x <dbp:leadername> <dbr:frasier> . ?x <dbo:currency> ?uri . ?x <rdf:type> <dbo:country> }
+select distinct ?uri where { <dbr:battle_of_fort_stephenson> <dbp:commander> ?uri }
+select distinct ?uri where { ?uri <dbo:leadername> <dbr:nasa> . ?uri <rdf:type> <dbo:settlement> }
+select distinct ?uri where { <dbr:kenya_national_under - 21_football_team> <dbp:homestadium> ?uri . <dbr:argentine_national_football_team> <dbo:birthplace> ?uri }
+select distinct ?uri where { ?x <dbo:almamater> <dbr:nasa> . ?x <dbo:award> ?uri . ?x <rdf:type> <dbo:scientist> }
+ask where { <dbr:lyons_theatres> <dbo:managerclub> <dbr:liga_club> }
+select distinct ?uri where { <dbr:india> <dbp:order> ?uri }
+select distinct ?uri where { ?uri <dbp:constituency> <dbr:duboce_triangle,_san_francisco> . ?uri <dbp:constituency> <dbr:harris_hotel> . ?uri <rdf:type> <dbo:officeholder> }
+select distinct ?uri where { <dbr:microsoft_windows> <dbo:author> ?x . ?x <dbo:almamater> ?uri . }
+select distinct ?uri where { ?uri <dbp:leader> <dbr:eliza_ii> . ?uri <rdf:type> <dbo:country> }
+select distinct ?uri where { ?x <dbo:archipelago> <dbr:martin_india> . ?x <dbp:nearestcity> ?uri . ?x <rdf:type> <dbo:island> }
+select distinct ?uri where { ?uri <dbo:deathcause> <dbr:australia> . ?uri <rdf:type> <dbo:person> }
+select distinct ?uri where { <dbr:bob_macmillan> <dbp:draftteam> ?uri . <dbr:michael_pashnin> <dbp:draftteam> ?uri }
+select distinct ?uri where { ?x <dbp:notablecommanders> <dbr:chicago_people> . ?x <dbo:battles> ?uri . }
+select distinct ?uri where { ?x <dbp:designer> <dbr:paul_tai> . ?x <dbo:genre> ?uri . ?x <rdf:type> <dbo:building> }
+select distinct ?uri where { <dbr:john_of_germany> <dbp:canonizedby> ?uri . <dbr:edwin_of_northumbria> <dbp:veneratedin> ?uri }
+ask where { <dbr:shaun_river> <dbp:sourceregion> <dbr:dow> }
+select distinct ?uri where { <dbr:samuel_wilson> <dbp:birthplace> ?uri . <dbr:wyant_jes> <dbo:birthplace> ?uri }
+select distinct ?uri where { ?uri <dbo:producer> <dbr:michael_deeley> . ?uri <rdf:type> <dbo:film> }
+select distinct count(?uri)where { ?uri <dbp:starring> <dbr:michael_jackson> . }
+ask where { <dbr:mount_harry_potterson> <dbo:associatedband> <dbr:harris> }
+select distinct ?uri where { <dbr:steven_t._mason> <dbo:child> ?x . ?x <dbo:deathplace> ?uri . }
+select distinct ?uri where { ?x <dbo:deathplace> <dbr:united_states> . ?uri <dbo:deathplace> ?x . ?uri <rdf:type> <dbo:officeholder> }
+select distinct ?uri where { ?uri <dbo:hubairport> <dbr:los_angeles_international_airport> . ?uri <rdf:type> <dbo:airline> }
+select distinct ?uri where { ?uri <dbo:network> <dbr:nbc> . ?uri <dbo:location> <dbr:massachusetts> . ?uri <rdf:type> <dbo:televisionshow> }
+select distinct count(?uri)where { ?uri <dbp:company> <dbr:paramount_television> . ?uri <dbp:network> <dbr:paramount_television> }
+select distinct ?uri where { ?uri <dbp:doctoraladvisor> <dbr:john_robert_woodyard> . ?uri <dbp:doctoraladvisor> <dbr:john_wiener_award_award> . ?uri <rdf:type> <dbo:scientist> }
+select distinct ?uri where { ?uri <dbo:mascot> <dbr:augustus> . ?uri <dbp:mascot> <dbr:jordan_googer> . ?uri <rdf:type> <dbo:university> }
+select distinct ?uri where { ?uri <dbo:locationcity> <dbr:harris_county,_texas> . ?uri <rdf:type> <dbo:company> }
+select distinct ?uri where { ?uri <dbo:predecessor> <dbr:mark_timothy_louis> . ?uri <dbo:predecessor> <dbr:timothy_ann> . ?uri <rdf:type> <dbo:officeholder> }
+select distinct ?uri where { ?x <dbo:birthplace> <dbr:colum,_colin> . ?uri <dbp:residence> ?x . }
+select distinct ?uri where { <dbr:french_roston> <dbo:battle> ?uri . <dbr:moscow_vener> <dbp:battles> ?uri }
+select distinct ?uri where { <dbr:john_oberr> <dbo:almamater> ?uri }
+select distinct ?uri where { <dbr:vive> <dbo:nearestcity> ?uri }
+select distinct ?uri where { ?x <dbp:notablecommanders> <dbr:canada> . ?x <dbo:religion> ?uri . }
+select distinct ?uri where { <dbr:kumta> <dbo:title> ?uri }
+select distinct ?uri where { <dbr:on_america> <dbo:residence> ?uri . <dbr:north_america> <dbp:area> ?uri }
+select distinct ?uri where { <dbr:allas_( album )> <dbo:album> ?uri }
+select distinct ?uri where { ?x <dbo:commander> <dbr:bernard_herrman> . ?x <dbp:mascot> ?uri . ?x <rdf:type> <dbo:militaryunit> }
+select distinct ?uri where { <dbr:rojas> <dbo:governmenttype> ?uri }
+select distinct ?uri where { <dbr:zhority> <dbo:language> ?uri }
+select distinct ?uri where { <dbr:victor_records> <dbo:distributinglabel> ?x . ?x <dbp:currency> ?uri . ?x <rdf:type> <dbo:company> }
+select distinct ?uri where { <dbr:kubrick> <dbo:religion> ?uri }
+select distinct ?uri where { <dbr:albert_gore> <dbp:characters> ?x . ?x <dbo:religion> ?uri . }
+select distinct count(?uri)where { ?x <dbp:author> <dbr:terry_paul> . ?x <dbo:author> ?uri . }
+select distinct ?uri where { <dbr:daund_deeley> <dbo:routestart> ?uri . <dbr:boel_railway_station> <dbp:operator> ?uri . }
+select distinct ?uri where { <dbr:charles_philippines_season> <dbo:residence> ?uri . <dbr:g._regan_season> <dbo:residence> ?uri }
+select distinct ?uri where { ?uri <dbp:phylum> <dbr:chordate> . ?uri <rdf:type> <dbo:mammal> }
+select distinct ?uri where { <dbr:linda_bergman> <dbo:author> ?x . ?x <dbp:notableworks> ?uri . }
+ask where { <dbr:nick_dis> <dbp:trainer> <dbr:joel> }
+ask where { <dbr:francisco_c.> <dbp:narrator> <dbr:franke> }
+select distinct ?uri where { <dbr:michael_m._sears> <dbo:employer> ?uri }
+select distinct ?uri where { ?uri <dbo:restingplace> <dbr:north_bend,_ohio> . ?uri <dbo:battle> <dbr:fort_recovery> . ?uri <rdf:type> <dbo:officeholder> }
+select distinct ?uri where { ?x <dbp:maininterests> <dbr:y._york> . ?x <dbo:series> ?uri . ?x <rdf:type> <dbo:book> }
+select distinct ?uri where { <dbr:jon_speelman> <dbo:field> ?uri . <dbr:karen_grigorian> <dbo:field> ?uri }
+select distinct ?uri where { ?uri <dbp:thememusiccomposer> <dbr:julian_gingell> . ?uri <dbo:network> <dbr:fox_broadcasting_company> . ?uri <rdf:type> <dbo:televisionshow> }
+select distinct count(?uri)where { ?x <dbp:publisher> <dbr:entertainment_entertainment> . ?x <dbo:genre> ?uri . }
+select distinct ?uri where { <dbr:peru_chess> <dbp:assembly> ?uri }
+select distinct ?uri where { <dbr:thomas_henry> <dbo:relative> ?x . ?x <dbo:opponent> ?uri . }
+select distinct ?uri where { <dbr:harry_al - kazan> <dbo:deathplace> ?uri }
+select distinct ?uri where { ?uri <dbo:mouthmountain> <dbr:chordate> . ?uri <rdf:type> <dbo:mammal> }
+ask where { <dbr:raymond_marie> <dbo:birthplace> <dbr:colorado> }
+select distinct ?uri where { ?x <dbo:deathplace> <dbr:california> . ?x <dbo:basedon> ?uri . ?x <rdf:type> <dbo:musical> }
+ask where { <dbr:ambrose> <dbp:coach> <dbr:american_american> }
+select distinct ?uri where { ?x <dbo:almamater> <dbr:uss_korea> . ?uri <dbp:nationality> ?x . ?uri <rdf:type> <dbo:country> }
+select distinct count(?uri)where { ?x <dbp:coach> <dbr:middlesbrough_f. c.> . ?x <dbo:coach> ?uri . }
+select distinct ?uri where { ?x <dbo:monarch> <dbr:united_states_department> . ?uri <dbp:monarch> ?x . ?uri <rdf:type> <dbo:monarch> }
+select distinct ?uri where { ?uri <dbp:nationalteam> <dbr:england_national_football_team> . ?uri <dbp:nationalteam> <dbr:middlesbrough_f. c.> . }
+select distinct ?uri where { <dbr:lake_victoria> <dbo:nearestcity> ?uri }
+ask where { <dbr:elizabeth_anthony_( film )> <dbp:editing> <dbr:charles_jim> }
+select distinct ?uri where { <dbr:william_clark> <dbp:appointer> ?uri }
+select distinct ?uri where { ?x <dbp:inflow> <dbr:apollo_center> . ?x <dbp:location> ?uri . ?x <rdf:type> <dbo:soccerclub> }
+select distinct ?uri where { <dbr:the_haunted_house_( film )> <dbo:director> ?x . ?x <dbo:award> ?uri . }
+select distinct ?uri where { ?uri <dbo:family> <dbr:ape> . }
+select distinct ?uri where { ?x <dbp:developer> <dbr:edwin_catto> . ?x <dbp:owner> ?uri . }
+select distinct ?uri where { <dbr:boston_bank> <dbp:owner> ?x . ?x <dbp:owner> ?uri . }
+select distinct ?uri where { <dbr:alexandre_t._moscow> <dbp:education> ?uri . <dbr:timothy_moscow> <dbo:deathplace> ?uri }
+select distinct ?uri where { ?uri <dbo:parentmountain> <dbr:mexico> . ?uri <rdf:type> <dbo:mountain> }
+select distinct ?uri where { ?uri <dbo:predecessor> <dbr:lucius_columbia> . ?uri <dbo:predecessor> <dbr:marcus_california> . ?uri <rdf:type> <dbo:officeholder> }
+ask where { <dbr:nintendo_entertainment> <dbp:division> <dbr:nintendo_entertainment> }
+select distinct ?uri where { <dbr:roston_river> <dbo:sourcecountry> ?uri . <dbr:adrian_adams> <dbo:river> ?uri }
+select distinct ?uri where { <dbr:george_george,_jr.> <dbo:occupation> ?uri . <dbr:buddhism> <dbp:office> ?uri }
+select distinct ?uri where { ?x <dbo:child> <dbr:maryland> . ?uri <dbp:child> ?x . }
+select distinct ?uri where { ?x <dbp:currentmembers> <dbr:egypt_cemetery> . ?x <dbp:currentclub> ?uri . }
+select distinct ?uri where { <dbr:sarah_kansas _> <dbp:country> ?uri . <dbr:craig_detroit> <dbo:country> ?uri }
+select distinct ?uri where { <dbr:lake_lake_hayes> <dbo:locationcity> ?uri }
+select distinct ?uri where { <dbr:fc_sc_moscow_season> <dbo:homestadium> ?uri . <dbr:spain_moscow_season> <dbo:homestadium> ?uri . }
+ask where { <dbr:james_natt> <dbo:bandmember> <dbr:james_nasa> }
+select distinct ?uri where { <dbr:charles_philippines_ii> <dbo:parent> ?uri . <dbr:robert_t._ii> <dbo:parent> ?uri . }
+select distinct ?uri where { <dbr:mac_african_system> <dbo:operatingsystem> ?x . ?x <dbp:developer> ?uri . ?x <rdf:type> <dbo:software> }
+select distinct ?uri where { <dbr:south_south_station> <dbo:servingrailwayline> ?x . ?x <dbp:area> ?uri . }
+select distinct ?uri where { ?uri <dbp:party> <dbr:boston_district> . ?uri <rdf:type> <dbo:person> }
+select distinct ?uri where { <dbr:first_san_marino_grand_prix> <dbp:firstdriver> ?uri }
+select distinct ?uri where { ?x <dbp:successor> <dbr:ntsburgh_hill> . ?x <dbo:state> ?uri . ?x <rdf:type> <dbo:senator> }
+select distinct ?uri where { ?x <dbp:architect> <dbr:christian_university> . ?x <dbp:affiliation> ?uri . }
+select distinct ?uri where { <dbr:mcdonald> <dbo:manufacturer> ?uri }
+select distinct count(?uri)where { ?uri <dbp:label> <dbr:kobalt_label> . }
+select distinct ?uri where { ?uri <dbo:creator> <dbr:larry_jerry> . ?uri <dbo:creator> <dbr:david_sein_dot }
+select distinct ?uri where { ?x <dbp:fields> <dbr:sansylva> . ?x <dbp:fields> ?uri . ?x <rdf:type> <dbo:scientist> }
+select distinct ?uri where { ?x <dbo:location> <dbr:canada> . ?x <dbp:stylisticorigin> ?uri . ?x <rdf:type> <dbo:genre> }
+select distinct ?uri where { <dbr:vanderbilt_moscow> <dbo:university> ?uri . <dbr:wikipedia> <dbo:college> ?uri }
+select distinct ?uri where { ?x <dbo:almamater> <dbr:ghana> . ?x <dbp:nationality> ?uri . ?x <rdf:type> <dbo:person> }
+select distinct ?uri where { <dbr:north_bridge> <dbo:border> ?x . ?x <dbo:border> ?uri . }
+select distinct ?uri where { <dbr:william_lee> <dbo:appointer> ?uri }
+select distinct ?uri where { ?uri <dbo:developer> <dbr:j._michael_straczynski> . ?uri <dbp:distributor> <dbr:warner_bros.> . ?uri <rdf:type> <dbo:televisionshow> }
+select distinct ?uri where { ?uri <dbp:venue> <dbr:san_international_airport> . }
+select distinct ?uri where { <dbr:lake_uniamesi> <dbp:outflow> ?uri }
+select distinct ?uri where { ?x <dbo:order> <dbr:reca_university> . ?x <dbp:mascot> ?uri . ?x <rdf:type> <dbo:school> }
+select distinct count(?uri)where { ?uri <dbo:family> <dbr:canada> . ?uri <rdf:type> <dbo:mammal> }
+select distinct ?uri where { <dbr:merritt_university> <dbo:publisher> ?uri . <dbr:michael_powell_( lacrosse )> <dbp:publisher> ?uri }
+select distinct ?uri where { ?x <dbo:countyseat> <dbr:texas> . ?x <dbo:foundationplace> ?uri . ?x <rdf:type> <dbo:company> }
+select distinct ?uri where { <dbr:united_states_mcgregor> <dbo:residence> ?uri }
+select distinct ?uri where { <dbr:united_states_house_of_representatives_elections_and_representatives_elections,_representatives_and_representatives> <dbo:leader> ?uri }
+select distinct ?uri where { <dbr:michael_m._sears> <dbo:employer> ?uri . <dbr:michael_iii> <dbo:producer> ?uri }
+select distinct ?uri where { <dbr:tommy_tucker's_tooth> <dbp:animator> ?uri }
+select distinct ?uri where { ?uri <dbo:mouthmountain> <dbr:baikal_mountains> . ?uri <rdf:type> <dbo:river> }
+select distinct ?uri where { ?x <dbo:majorshrine> <dbr:detroit> . ?x <dbp:majorshrine> ?uri . ?x <rdf:type> <dbo:saint> }
+select distinct ?uri where { <dbr:playstation_( company )> <dbo:owningcompany> ?uri . <dbr:simon> <dbp:parent> ?uri . }
+select distinct count(?uri)where { ?uri <dbp:placeofburial> <dbr:texas> . }
+select distinct count(?uri)where { ?uri <dbp:combatant> <dbr:french_people> . }
+select distinct count(?uri)where { ?uri <dbo:division> <dbr:bacteria> . ?uri <dbp:headquarters> <dbr:bacteria> }
+select distinct ?uri where { ?uri <dbo:developer> <dbr:j._michael_straczynski> . ?uri <rdf:type> <dbo:televisionshow> }
+ask where { <dbr:ethiopia> <dbp:headcoach> <dbr:chicago> }
+select distinct ?uri where { <dbr:united_states_( united_states )> <dbp:writer> ?uri }
+select distinct ?uri where { <dbr:dan_mcdonald> <dbo:occupation> ?x . ?x <dbo:author> ?uri . }
+select distinct ?uri where { ?x <dbo:locationcity> <dbr:toronto> . ?uri <dbp:location> ?x . }
+ask where { <dbr:karl_marx> <dbo:class> <dbr:marcell> }
+select distinct ?uri where { <dbr:sony_bank> <dbo:leadername> ?x . ?x <dbo:nationality> ?uri . ?x <rdf:type> <dbo:organisation> }
+select distinct ?uri where { ?uri <dbo:almamater> <dbr:saint_peters_peter> . ?uri <dbo:child> <dbr:liga_berkshire> . ?uri <rdf:type> <dbo:writer> }
+select distinct ?uri where { <dbr:bobby_theatre> <dbo:state> ?uri . <dbr:baku_theatre> <dbo:country> ?uri . }
+select distinct ?uri where { ?uri <dbo:foundedby> <dbr:fusajiro_york> . ?uri <dbp:network> <dbr:nintendo_entertainment> . ?uri <rdf:type> <dbo:company> }
+select distinct ?uri where { ?uri <dbo:otherparty> <dbr:shaun_khan> . ?uri <dbo:associatedmusicalartist> <dbr:benedict_black> . }
