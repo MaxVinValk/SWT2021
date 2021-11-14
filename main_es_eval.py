@@ -18,7 +18,7 @@ def main_es_eval(args):
 
     model = EncoderDecoder(device=args.device, beam_size=args.beam, max_length=args.max_target_length)
 
-    model.freeze_params()
+    # model.freeze_params()
 
     data_loader = get_loader(
         f"{args.data_folder}/{args.data_filename}",
@@ -26,15 +26,20 @@ def main_es_eval(args):
         "sparql",
         model.encoder_tokenizer,
         model.decoder_tokenizer,
+        max_source_length=args.max_source_length,
+        max_target_length=args.max_target_length,
     )
 
-    eval_data_loader = get_loader(
-        f"{args.data_folder}/{args.dev_filename}",
-        "en",
-        "sparql",
-        model.encoder_tokenizer,
-        model.decoder_tokenizer,
-    )
+    if args.do_early_stopping:
+        eval_data_loader = get_loader(
+            f"{args.data_folder}/{args.dev_filename}",
+            "en",
+            "sparql",
+            model.encoder_tokenizer,
+            model.decoder_tokenizer,
+            max_source_length=args.max_source_length,
+            max_target_length=args.max_target_length,
+        )
 
     model.to(args.device)
     model.train()
@@ -89,6 +94,7 @@ def main_es_eval(args):
 
             tr_loss += loss.item()
             train_loss = round(tr_loss / (nb_tr_steps + 1), 4)
+
             bar.set_description("epoch {} loss {}".format(epoch, train_loss))
             nb_tr_examples += source_ids.size(0)
             nb_tr_steps += 1
@@ -119,6 +125,9 @@ def main_es_eval(args):
                     loss = loss / args.gradient_accumulation_steps
 
                 eval_loss += loss.item()
+
+            with open("loss.txt", "a") as f:
+                f.write(f"{eval_loss/len(eval_data_loader)}\n")
 
             early_stopping(eval_loss / len(eval_data_loader), model, epoch)
             if early_stopping.early_stop:
@@ -158,7 +167,7 @@ def main_es_eval(args):
 
             model.eval()
             p = []
-            for batch in eval_dataloader:
+            for batch in tqdm(eval_dataloader, total=len(eval_dataloader)):
                 batch = tuple(t.to(args.device) for t in batch)
                 source_ids, source_mask = batch
                 with torch.no_grad():
@@ -214,3 +223,5 @@ def main_es_eval(args):
                 output_dir = os.path.join(
                     args.output_folder, "checkpoint-best-bleu")
                 save_model(model, output_dir)
+
+    save_model(model, f"{args.output_folder}/final")
