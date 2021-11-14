@@ -99,6 +99,12 @@ def get_argparser():
         help="Number of epochs for patience in ES",
     )
 
+    # Args for evaluator
+    parser.add_argument("--gold", dest="gold", required=True,
+                        help="Golden standard file for evaluation")
+    parser.add_argument("--output", dest="output", required=True,
+                        help="Output file of our system, for evaluation")
+
     return parser
 
 
@@ -126,3 +132,10 @@ def save_model(model, folder):
 
 def revert_query(sparql):
     return decode(sparql)
+
+def space_mapper(queries):
+    res = []
+    for i in range(len(queries)):
+        queries[i] = queries[i].replace("< ", "<").replace(" >", ">").replace(" _ ", "_").replace(" : ", ":")
+
+    return queries
