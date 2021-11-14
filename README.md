@@ -5,6 +5,8 @@ for the course semantic web technology. As this project was to evaluate
 the performance of the SP(B)ERT architecture with a BART-based encoder,
 many parts of the code have been adapted from the [SPBERT repository](https://github.com/heraclex12/NLP2SPARQL).
 
+Note that the early stopping class was adapted from [this implementation](https://github.com/Bjarten/early-stopping-pytorch).
+
 ## How to run
 The program entrypoint is main.py and has 4 modes available:
 ```bash
