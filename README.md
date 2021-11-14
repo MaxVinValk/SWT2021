@@ -1,4 +1,4 @@
-# Semantic Web Technology - Group 1
+# Semantic Web Technology - Group 4
 
 This repository contains the code that was used for the final project
 for the course semantic web technology. As this project was to evaluate
